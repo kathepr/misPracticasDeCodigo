@@ -82,4 +82,8 @@ elif opcion ==7:
     print ("El resultado del modulo / resto / residuo es: ", numero)
 
 
+else:
+    print ("La opción elegida no existe, por favor intentelo de nuevo.")
+
+
 
