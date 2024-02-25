@@ -6,8 +6,8 @@ if clave == "clave1":
     print ("Usted se encuentra en el Departamento de Atención al Cliente. \n")
     
     
-    tiempo = int(input ("¿Cuantos años lleva trabajando en Rappi? "))
-    if tiempo == 1:
+    tiempo = float(input ("¿Cuantos años lleva trabajando en Rappi? "))
+    if tiempo >= 1 and tiempo<2:
         print (nombre, ", usted tiene derecho a 6 días de vacaciones.")
 
     elif tiempo >= 2 and tiempo <= 6:
@@ -24,8 +24,8 @@ elif clave == "clave2":
     print ("Usted se encuentra en el Departamento de Logística. \n")
     
     
-    tiempo = int(input ("¿Cuantos años lleva trabajando en Rappi? "))
-    if tiempo == 1:
+    tiempo = float(input ("¿Cuantos años lleva trabajando en Rappi? "))
+    if tiempo >= 1 and tiempo<2:
         print (nombre, ", usted tiene derecho a 7 días de vacaciones.")
 
     elif tiempo >= 2 and tiempo <= 6:
@@ -40,8 +40,8 @@ elif clave == "clave3":
     print ("Usted se encuentra en el Departamento de Gerencia. \n")
     
     
-    tiempo = int(input ("¿Cuantos años lleva trabajando en Rappi? "))
-    if tiempo == 1:
+    tiempo = float(input ("¿Cuantos años lleva trabajando en Rappi? "))
+    if tiempo >= 1 and tiempo<2:
         print (nombre, ", usted tiene derecho a 10 días de vacaciones.")
 
     elif tiempo >= 2 and tiempo <= 6:
