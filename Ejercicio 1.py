@@ -15,6 +15,9 @@ if clave == "clave1":
     
     elif tiempo >=7:
         print (nombre, ", usted tiene derecho a 20 días de vacaciones.  ")
+    
+    else:
+        print (nombre, ", aun no tiene derecho a vacaciones.")
 
 
 
@@ -32,7 +35,12 @@ elif clave == "clave2":
         print (nombre, ", usted tiene derecho a 15 días de vacaciones.")    
     
     elif tiempo >=7:
-        print (nombre, ", usted tiene derecho a 22 días de vacaciones.  ")        
+        print (nombre, ", usted tiene derecho a 22 días de vacaciones.  ")    
+
+    else:
+        print (nombre, ", aun no tiene derecho a vacaciones.")    
+
+
 
 
 
@@ -49,6 +57,11 @@ elif clave == "clave3":
     
     elif tiempo >=7:
         print (nombre, ", usted tiene derecho a 30 días de vacaciones.  ")
+    
+    else:
+        print (nombre, ", aun no tiene derecho a vacaciones.")
+
+
 
 
 else:
