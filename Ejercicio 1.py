@@ -36,9 +36,6 @@ elif clave == "clave2":
 
 
 
-
-
-
 elif clave == "clave3":
     print ("Usted se encuentra en el Departamento de Gerencia. \n")
     
@@ -52,4 +49,9 @@ elif clave == "clave3":
     
     elif tiempo >=7:
         print (nombre, ", usted tiene derecho a 30 días de vacaciones.  ")
+
+
+else:
+    print (nombre, ", la clave del departamento ingresada NO EXISTE, por favor vuelva a intentarlo.")
+
 
