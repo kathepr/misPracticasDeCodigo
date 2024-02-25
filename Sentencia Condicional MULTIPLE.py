@@ -22,7 +22,7 @@ elif num == 5:
 else:
     print ("Este programa solo puede convertir hasta el número 5")
 
-print ("Fin.")
+print ("Fin...")
 
 
 
