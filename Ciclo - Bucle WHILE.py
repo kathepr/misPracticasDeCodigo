@@ -18,7 +18,7 @@ while y<=10:
     print (y,nombre,sep="." )
     y +=1
 
-print ("Fin.")    
+print ("Fin")    
 
 
 
