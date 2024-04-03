@@ -1,14 +1,1 @@
-[
-    {
-        "id": "F01",
-        "nombre": "DVD",
-        "NroCopias": 2,
-        "valorPrestamo": 5000
-    },
-    {
-        "id": "F02",
-        "nombre": "BlueRay",
-        "NroCopias": 2,
-        "valorPrestamo": 8000
-    }
-]
+[{"id": "F01", "nombre": "DVD", "NroCopias": 2, "valorPrestamo": 5000}, {"id": "F02", "nombre": "BlueRay", "NroCopias": 2, "valorPrestamo": 8000}, {"id": "F534", "nombre": "Virtual", "NroCopias": 100000, "valorPrestamo": 2000}]

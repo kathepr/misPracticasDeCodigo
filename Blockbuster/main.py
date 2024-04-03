@@ -102,9 +102,11 @@ def gestorFormatos():
         
             if opcion>=1 and opcion<4:
                 if opcion == 1:
-                    print(formatos.crearFormatos())
+                    formatoNuevo = formatos.crearFormatos() #Se guarda en esta variable, el formato que devuelve la función
+                    print(tabulate([formatoNuevo], headers = "keys", tablefmt="rounded_grid")) #Se imprime un formato nuevo en la tabla
                 elif opcion == 2:
-                    print(formatos.listarFormatos())
+                    todosFormato = formatos.listarFormatos()#Se guarda en esta variable, todos los formatos que devuelven la función
+                    print(tabulate(todosFormato, headers = "keys", tablefmt="rounded_grid")) #Se imprimen todos los formatos en la tabla
                 elif opcion == 3:
                     break
             else:
