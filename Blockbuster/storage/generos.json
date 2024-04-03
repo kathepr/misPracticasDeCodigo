@@ -1,0 +1,18 @@
+[
+    {
+        "id": "G01",
+        "nombre": "Animacion"
+    },
+    {
+        "id": "G02",
+        "nombre": "Accion"
+    },
+    {
+        "id": "G03",
+        "nombre": "Drama"
+    },
+    {
+        "id": "G04",
+        "nombre": "Musical"
+    }
+]

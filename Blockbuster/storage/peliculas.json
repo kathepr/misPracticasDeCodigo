@@ -1,0 +1,42 @@
+[   
+    {
+        
+        "id": "P01",
+        "nombre": "La princesa y el Sapo",
+        "duracion": "120",
+        "sinopsis": "bla bla bla",
+        "generos":[],
+        "actores":[],
+        "formato":[]
+    },
+    {
+        
+        "id": "P02",
+        "nombre": "Rapido y Furioso",
+        "duracion": "120",
+        "sinopsis": "bla bla bla",
+        "generos":[],
+        "actores":[],
+        "formato":[]
+    },
+    {
+        
+        "id": "P03",
+        "nombre": "Pinocho",
+        "duracion": "120",
+        "sinopsis": "bla bla bla",
+        "generos":[],
+        "actores":[],
+        "formato":[]
+    },
+    {
+        
+        "id": "P04",
+        "nombre": "El gran Showman",
+        "duracion": "120",
+        "sinopsis": "bla bla bla",
+        "generos":[],
+        "actores":[],
+        "formato":[]
+    }
+]

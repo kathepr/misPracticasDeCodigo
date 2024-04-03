@@ -1,0 +1,27 @@
+[
+    {
+        "id": "A01",
+        "nombre": "Anilka Noni Rose",
+        "rol": "Actriz de voz de la Protagonista"
+    },
+    {
+        "id": "A02",
+        "nombre": "Vin Diesel",
+        "rol": "Protagonista"
+    },
+    {
+        "id": "A03",
+        "nombre": "Benjamin Evan Ainsworth",
+        "rol": "Actor de voz del Protagonista"
+    },
+    {
+        "id": "A04",
+        "nombre": "Kate Winslet",
+        "rol": "Protagonista"
+    },
+    {
+        "id": "A05",
+        "nombre": "Hugh Jackman",
+        "rol": "Protagonista"
+    }
+]
