@@ -6,7 +6,7 @@ import json
 import requests
 
 def getAllActores():
-    peticion = requests.get("http://172.16.100.114:5503")
+    peticion = requests.get("http://172.16.103.20:5503")
     data = json.loads(peticion.text)
     return data
 
@@ -14,37 +14,51 @@ def getAllActores():
 def crearActores():
 #Expresiones regulares para los datos ingresados
     codGenero = shortuuid.random(length=4)
-    nuevoId = id = random.randint(100, 999)
+    id =''.join(random.choices('0123456789', k=3)) #con random creo una secuencia aleatoria de elementos, join me ayuda a convertir la lista en caracteres
     nombreGeneroR = re.compile(r'^[a-zA-ZáéíóúÁÉÍÓÚ\s]+$')
-    rolActR = re.compile(r'^[a-zA-ZáéíóúÁÉÍÓÚ\s]+$')
+    rol = re.compile(r"^[1-3]$") # Solo se permite un número entero del 1 al 3
 
 #Obtener los datos del usuario
     nombreAct = validacion.validar_input(nombreGeneroR, "Ingrese el nombre del Actor: ")
-    rolAct = validacion.validar_input(rolActR, "Ingrese el rol del Actor: ")
+
+    print("""
+                    OPCIONES PARA EL TIPO DE ASIGNACIÓN
+                          
+                          1. PROTAGONISTA
+                          2. ANTAGONISTA
+                          3. REPARTO 
+                    """)
+    rol = input("Ingrese el rol de la actriz/actor: ")
+    if rol == "1":
+        rolAct = "Protagonista"
+    elif rol == "2":
+        rolAct = "Antagonista"
+    elif rol == "3":
+        rolAct = "Reparto"
+        
 
     actorNuevo = {
-            
                 "id": f"A{id}",
                 "nombre": nombreAct,
                 "rol": rolAct
-            
-    }
+                }
 
 # json-server storage/actores.json -b 5503
-    url = "http://172.16.100.114:5503"
+    url = "http://172.16.103.20:5503"
     data = json.dumps(actorNuevo)
     peticion = requests.post(url,data)
 
-    print("Se ha agregado un nu7evo genero a la base de datos")
+    print("\nSe ha agregado un nuevo actriz/actor a la base de datos")
     return actorNuevo
 
 
 def listarActores():
-    todosAct = []
+    todosActores = []
     for act in getAllActores():
-        todosAct.append({ 
+        actoresInfo = { 
             "Id": act.get("id"),
             "Nombre del Género": act.get("nombre"),
-            "Rol de la Actriz/ACtor": act.get("rol")
-        })
-    return todosAct
+            "Rol de la Actriz/Actor": act.get("rol")
+        }
+        todosActores.append(actoresInfo) #Guardo en una lista toda la información que me brindó el loop por la base de datos de Actores/Actrices
+    return todosActores

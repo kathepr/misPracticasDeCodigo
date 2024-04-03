@@ -1,4 +1,4 @@
-import tabulate
+from tabulate import tabulate
 import modules.gestorGeneros as generos
 import modules.gestorActores as actores
 import modules.gestorFormatos as formatos
@@ -23,9 +23,12 @@ def gestorGeneros():
         
             if opcion>=1 and opcion<4:
                 if opcion == 1:
-                    print(generos.crearGenero())
+                    generoNuevo = generos.crearGenero() #Se guarda en esta variable, el genero que devuelve la función
+                    print(tabulate([generoNuevo], headers = "keys", tablefmt="rounded_grid"))#Se imprime un genero nuevo en la tabla
+               
                 elif opcion == 2:
-                    print(generos.listarGeneros())
+                    todosGeneros = generos.listarGeneros() #Se guarda en esta variable, todos los generos que devuelven la función
+                    print(tabulate(todosGeneros, headers = "keys", tablefmt="rounded_grid"))#Se imprimen todos los generos en la tabla
                 elif opcion == 3:
                     break
             else:
@@ -49,8 +52,8 @@ def gestorActores():
              Gestor de Actores
         *****************************  
           
-            1. Crear actores
-            2. Listar actores
+            1. Crear Actores
+            2. Listar Actores
             3. Ir Menu Principal
           
           """)
@@ -60,9 +63,11 @@ def gestorActores():
         
             if opcion>=1 and opcion<4:
                 if opcion == 1:
-                    print(actores.crearActores())
+                    actorNuevo = actores.crearActores() #Se guarda en esta variable, el actor que devuelve la función
+                    print(tabulate([actorNuevo], headers = "keys", tablefmt="rounded_grid"))#Se imprime un actor nuevo en la tabla
                 elif opcion == 2:
-                    print(actores.listarActores())
+                    todosActores = actores.listarActores() #Se guarda en esta variable, todos los actores que devuelven la función
+                    print(tabulate(todosActores, headers = "keys", tablefmt="rounded_grid"))#Se imprimen todos los actores en la tabla
                 elif opcion == 3:
                     break
             else:
@@ -228,7 +233,7 @@ if __name__ == "__main__":
         try: 
             opcion = int(input("\nSeleccione una de las opciones: "))
         
-            if opcion>=1 and opcion<6:
+            if opcion>=1 and opcion<7:
                 if opcion == 1:
                     gestorGeneros()
                 elif opcion == 2:

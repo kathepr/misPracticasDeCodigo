@@ -2,7 +2,7 @@
     {
         "id": "A01",
         "nombre": "Anilka Noni Rose",
-        "rol": "Actriz de voz de la Protagonista"
+        "rol": "Protagonista"
     },
     {
         "id": "A02",
@@ -12,7 +12,7 @@
     {
         "id": "A03",
         "nombre": "Benjamin Evan Ainsworth",
-        "rol": "Actor de voz del Protagonista"
+        "rol": "Protagonista"
     },
     {
         "id": "A04",
@@ -23,5 +23,15 @@
         "id": "A05",
         "nombre": "Hugh Jackman",
         "rol": "Protagonista"
+    },
+    {
+        "id": "A776",
+        "nombre": "Emma Watson",
+        "rol": "Protagonista"
+    },
+    {
+        "id": "A094",
+        "nombre": "Mary Smith",
+        "rol": "Antagonista"
     }
 ]

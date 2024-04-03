@@ -14,5 +14,13 @@
     {
         "id": "G04",
         "nombre": "Musical"
+    },
+    {
+        "id": "G165",
+        "nombre": "Comedia"
+    },
+    {
+        "id": "G995",
+        "nombre": "Thriller"
     }
 ]
