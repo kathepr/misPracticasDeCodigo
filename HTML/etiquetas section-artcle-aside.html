@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas de Contenido Section, Article y Aside</title>
+</head>
+
+<!--
+    section: Agrupa contenido que esta relacionado. Cuando creamos bloques cuyo contenido es parte de un bloque total. Lo semanticamente correcto es usar section. 
+
+    article: Representa contenido independiente. Podemos leer ese gragmento de forma independiente y no afectaría en nada su comprensión ya que no está relacionado con el resto del contenido.
+
+    aside: Se usa para representar contenido relacionado, pero no forma parte del contenido principal. 
+-->
+
+<!--
+    Anidamiento:
+    * Un section puede contener articles:
+        Si tenemos varios articulos que hablan sobre etiquetas de HTML
+    * Un article puede contener varios sections:
+        El articulo independiente, puede contener secciones como "Navegadores más utilizado en el 2023"
+-->
+
+
+<body>
+    <header>
+        <h1>NOCTICIAS NACIONALES</h1>
+    </header>
+    <main> 
+        <section>
+            <h2>Noticias del Día</h2>
+            <article>
+                <h3>Noticia 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim iure ea mollitia itaque molestiae fugiat, beatae dicta quidem iusto. Voluptatum numquam ducimus perferendis fuga officia quia voluptatibus qui atque!</p>
+            </article>
+            <article>
+                <h3>Noticia 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium facilis accusamus necessitatibus blanditiis voluptatem tempore maxime ut odio nihil officiis amet iusto perferendis ex libero, nesciunt nam animi eaque quaerat?</p>
+            </article>
+            <article>
+                <h3>Noticia 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aut modi facilis dolorem praesentium, aliquam ab adipisci dolores nesciunt numquam tempore minus ullam nobis atque obcaecati optio natus itaque commodi.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>04/04/2024</footer>
+</body>
+</html>
