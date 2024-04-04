@@ -145,7 +145,8 @@ def gestorPeliculas():
         
             if opcion>=1 and opcion<8:
                 if opcion == 1:
-                    menuCliente()
+                    peliculaNueva = peliculas.agregarPelicula()#Se guarda en esta variable, la peli que devuelve la función
+                    print(tabulate([peliculaNueva], headers = "keys", tablefmt= "rounded_grid")) #Se imprime una peli nueva en la tabla
                 elif opcion == 2:
                     menuOficina()
                 elif opcion == 3:
