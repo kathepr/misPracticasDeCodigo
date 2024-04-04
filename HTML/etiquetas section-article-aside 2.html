@@ -3,26 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas de Contenido Section, Article y Aside</title>
+    <title>Document</title>
 </head>
-
-<!--
-    section: Agrupa contenido que esta relacionado. Cuando creamos bloques cuyo contenido es parte de un bloque total. Lo semanticamente correcto es usar section. 
-
-    article: Representa contenido independiente. Podemos leer ese gragmento de forma independiente y no afectaría en nada su comprensión ya que no está relacionado con el resto del contenido.
-
-    aside: Se usa para representar contenido relacionado, pero no forma parte del contenido principal. 
--->
-
-<!--
-    Anidamiento:
-    * Un section puede contener articles:
-        Si tenemos varios articulos que hablan sobre etiquetas de HTML
-    * Un article puede contener varios sections:
-        El articulo independiente, puede contener secciones como "Navegadores más utilizado en el 2023"
--->
-
-
 <body>
     <header>
         <h1>NOCTICIAS NACIONALES</h1>
@@ -46,8 +28,18 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aut modi facilis dolorem praesentium, aliquam ab adipisci dolores nesciunt numquam tempore minus ullam nobis atque obcaecati optio natus itaque commodi.</p>
             </article>
         </section>
+        <article>
+            <h2>Navegadores más utilizados en el 2020</h2>
+            <section>
+                <h3>Chrome</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis delectus sequi cum reiciendis molestias illum, deserunt molestiae beatae saepe iste dolore fuga! Porro, aliquid adipisci vitae veniam optio nihil esse!</p>
+            </section>
+            <section>
+                <h3>FireFox</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis delectus sequi cum reiciendis molestias illum, deserunt molestiae beatae saepe iste dolore fuga! Porro, aliquid adipisci vitae veniam optio nihil esse!</p>
+            </section>
+        </article>
     </main>
-
-    <footer>04/04/2024</footer>
+    <footer>04/04/2023</footer>
 </body>
 </html>
