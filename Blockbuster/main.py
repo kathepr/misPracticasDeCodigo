@@ -148,7 +148,9 @@ def gestorPeliculas():
                     peliculaNueva = peliculas.agregarPelicula()#Se guarda en esta variable, la peli que devuelve la función
                     print(tabulate([peliculaNueva], headers = "keys", tablefmt= "rounded_grid")) #Se imprime una peli nueva en la tabla
                 elif opcion == 2:
-                    menuOficina()
+                    id = input("Ingrese el Id de la pelicula que desea editar: ")
+                    peliculaEditada = peliculas.editarPelicula(id)# Se guarda en esta variable, la peli que devuelve la función
+                    print(tabulate([peliculaEditada], headers = "keys", tablefmt = "rounded_grid")) #Se imprime una peli edita en la tabla
                 elif opcion == 3:
                     menuEmpleado()
                 elif opcion == 4:
