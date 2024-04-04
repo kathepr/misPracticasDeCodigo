@@ -6,9 +6,10 @@ import json
 import requests
 
 def getAllPeliculas():
-    peticion = requests.get("http://172.16.100.114:5501")
+    peticion = requests.get("http://172.16.103.36:5501")
     data = json.loads(peticion.text)
     return data
+
 
 def agregarPelicula():
     peliculaNueva = {}
@@ -36,7 +37,7 @@ def agregarPelicula():
 # Crear petición post para agregar la peli a la base de datos
 
 # json-server storage/peliculas.json -b 5504
-    url = "http://172.16.100.114:5501"
+    url = "http://172.16.103.36:5501"
     data = json.dumps(peliculaNueva)
     peticion = requests.post(url,data)
 
@@ -50,7 +51,7 @@ def editarPelicula(id):
     peliculaId = []
 
 # json-server storage/peliculas.json -b 5501
-    url = f"http://172.16.100.114:5501/{id}"
+    url = f"http://172.16.103.36:5501/{id}"
 
 #Expresiones regulares para los datos ingresados
     nombrePeliculaR = re.compile(r'^[a-zA-ZáéíóúÁÉÍÓÚ\s]+$')
@@ -59,7 +60,7 @@ def editarPelicula(id):
 
 #Obtener los datos del usuario
     print("¿Desea editar el nombre de la pelicula?")
-    opcionnombre = input(""" 1. SI   /    2. NO""")
+    opcionnombre = input(""" 1. SI   /    2. NO   :""")
     if opcionnombre == "1":
         nombrePelicula = validacion.validar_input(nombrePeliculaR, "Edite el nombre de la pelicula: ")
         peliculaEditada = {"nombre": nombrePelicula}
@@ -71,7 +72,7 @@ def editarPelicula(id):
     
 
     print("¿Desea editar la duración de la pelicula?")
-    opcionduracion = input(""" 1. SI   /    2. NO""")
+    opcionduracion = input(""" 1. SI   /    2. NO   :""")
     if opcionduracion == "1":
         duracion = validacion.validar_input(duracionR, "Edite la duración de la pelicula (en minutos): ")
         peliculaEditada = {"duracion": duracion}
@@ -83,7 +84,7 @@ def editarPelicula(id):
 
 
     print("¿Desea editar la sinopsis de la pelicula?")
-    opcionsinopsis = input(""" 1. SI   /    2. NO""")
+    opcionsinopsis = input(""" 1. SI   /    2. NO   :""")
     if opcionsinopsis == "1":
         duracion = sinopsis = validacion.validar_input(sinopsisR, "Edite la sinopsis de la pelicula: ")
         peliculaEditada = {"sinopsis": sinopsis}
@@ -93,7 +94,24 @@ def editarPelicula(id):
         print(" ")
     
     
+#Despues de los cambios que se van haciendo en tiempo real, traigo la información actual de la peli y eso es lo que voy a mostrarle al usuario. 
+    peticion = requests.get(f"http://172.16.103.36:5501/{id}")
+    datosPelicula = json.loads(peticion.text)
 
-    return peliculaEditada
+    peliculaActualizada = {
+    "Id": datosPelicula["id"],
+    "Nombre de la Pelicula": datosPelicula["nombre"],
+    "Duracion": datosPelicula["duracion"],
+    "Sinopsis": datosPelicula["sinopsis"],
+    "Generos": datosPelicula["generos"],
+    "Actores": datosPelicula["actores"],
+    "Formato": datosPelicula["formato"]
+    }
+  
+    
+    print("La pelicula se ha actualizado con la siguiente información: ")
+    return peliculaActualizada
+
+    
 
 
