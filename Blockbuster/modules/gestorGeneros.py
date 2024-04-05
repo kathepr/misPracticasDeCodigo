@@ -6,7 +6,7 @@ import json
 import requests
 
 def getAllGeneros():
-    peticion = requests.get("http://172.16.103.20:5502")
+    peticion = requests.get("http://172.16.100.114:5502")
     data = json.loads(peticion.text)
     return data
 
@@ -29,7 +29,7 @@ def crearGenero():
     }
 
 # json-server storage/generos.json -b 5502
-    url = "http://172.16.103.20:5502"
+    url = "http://172.16.100.114:5502"
     data = json.dumps(generoNuevo)
     peticion = requests.post(url,data)
 
