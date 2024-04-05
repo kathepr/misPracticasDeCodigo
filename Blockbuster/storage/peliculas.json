@@ -40,7 +40,12 @@
         "nombre": "Titanic",
         "duracion": "200",
         "sinopsis": "bla bla bla",
-        "generos": [],
+        "generos": [
+            {
+                "id": "G03",
+                "nombre": "Drama"
+            }
+        ],
         "actores": [],
         "formato": []
     }

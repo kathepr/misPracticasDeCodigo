@@ -134,22 +134,26 @@ def editarPelicula(id):
         # Agregar el género a la lista de géneros de la pelicula (aquí aun no he subido la info al servidor)
             dataPeliculaId["generos"].append(generoId)
 
-        # Agrego el genero que selecciono el usuario en la URL de pelicula (en el servidor), apartado generos
+        # Agrego el genero que selecciono el usuario en la URL de pelicula (en el servidor), aqui si subo la informacion al servidor
             data = json.dumps(dataPeliculaId)
             peticion = requests.patch(url,data)
 
-
-
-#                          FALTA AGREGAR EN GENEROS, LA INFO DEL GENERO QUE SELECCIONE EL USUARIO
-# -------------------------------------------------------------------------------------------------------------
-
-
-        # duracion = sinopsis = validacion.validar_input(sinopsisR, "Edite la sinopsis de la pelicula: ")
-        # peliculaEditada = {"sinopsis": sinopsis}
-        # data = json.dumps(peliculaEditada)
-        # peticion = requests.patch(url,data)
         elif opcionGenero == "2":
-            print(" ")
+            # Obtener informacion de la pelicula que el usuario decidio editar por su ID: 
+            peticionPeliculaId = requests.get(url)
+            dataPeliculaId= json.loads(peticionPeliculaId.text)
+
+            todosGenerosPeliculaId = []
+            for generos in dataPeliculaId["generos"]:
+                generoPeliculaIdInfo = { 
+                    "Id": generoPeliculaIdInfo.get("id"),
+                    "Nombre del Género": generoPeliculaIdInfo.get("nombre")
+                    }
+                todosGenerosPeliculaId.append(generoPeliculaIdInfo) #Guardo en una lista toda la información que me brindó el loop por la base de datos de Genero
+            print(tabulate(todosGenerosPeliculaId, headers = "keys", tablefmt="rounded_grid")) #Aqui le muestro al usuario los generos que tiene la pelicula
+            opcionGeneroId = input("\nIngrese el ID del genero que desea eliminar de la pelicula: ")
+
+        #    OJO: FALTA PROGRAMAR QUE SE ELIMINE EL GENERO CUYO ID FUE SELECCIONADO POR EL USUARIO.
     
     
 
