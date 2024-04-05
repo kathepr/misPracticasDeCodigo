@@ -116,7 +116,19 @@ def editarPelicula(id):
             print("Estos son los generos disponibles en la base de datos: ")
             todosGeneros = generos.listarGeneros() #Se guarda en esta variable, todos los generos que devuelven la función
             print(tabulate(todosGeneros, headers = "keys", tablefmt="rounded_grid"))#Se imprimen todos los generos en la tabla
+            
             idGenero = input("\nIngrese el id del genero que desea agregar a la pelicula: ")
+            peticion = requests.get(f"http://172.16.100.114:5502/{idGenero}") # TRAIGO LA INFO DEL GENERO CON EL ID QUE INGRESA EL USUARIO
+            dataGeneroId = json.loads(peticion.text)
+
+            generoId= {
+                        
+                            "id": dataGeneroId["id"],
+                            "nombre": dataGeneroId["nombre"]
+                        
+                }
+
+
 
 #                          FALTA AGREGAR EN GENEROS, LA INFO DEL GENERO QUE SELECCIONE EL USUARIO
 # -------------------------------------------------------------------------------------------------------------
