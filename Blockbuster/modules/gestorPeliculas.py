@@ -118,15 +118,25 @@ def editarPelicula(id):
             print(tabulate(todosGeneros, headers = "keys", tablefmt="rounded_grid"))#Se imprimen todos los generos en la tabla
             
             idGenero = input("\nIngrese el id del genero que desea agregar a la pelicula: ")
-            peticion = requests.get(f"http://172.16.100.114:5502/{idGenero}") # TRAIGO LA INFO DEL GENERO CON EL ID QUE INGRESA EL USUARIO
-            dataGeneroId = json.loads(peticion.text)
+            peticionGenero = requests.get(f"http://172.16.100.114:5502/{idGenero}") # TRAIGO LA INFO DEL GENERO CON EL ID QUE INGRESA EL USUARIO
+            dataGeneroId = json.loads(peticionGenero.text)
 
+        # Guardo el generoque traje de la URL de generos en un diccionario.
             generoId= {
-                        
-                            "id": dataGeneroId["id"],
-                            "nombre": dataGeneroId["nombre"]
-                        
-                }
+                        "id": dataGeneroId["id"],
+                        "nombre": dataGeneroId["nombre"]
+                      }
+            
+        # Obtener la pelicula que el usuario decidio editar por su ID: 
+            peticionPeliculaId = requests.get(url)
+            dataPeliculaId= json.loads(peticionPeliculaId.text)
+
+        # Agregar el género a la lista de géneros de la pelicula (aquí aun no he subido la info al servidor)
+            dataPeliculaId["generos"].append(generoId)
+
+        # Agrego el genero que selecciono el usuario en la URL de pelicula (en el servidor), apartado generos
+            data = json.dumps(dataPeliculaId)
+            peticion = requests.patch(url,data)
 
 
 
@@ -138,8 +148,8 @@ def editarPelicula(id):
         # peliculaEditada = {"sinopsis": sinopsis}
         # data = json.dumps(peliculaEditada)
         # peticion = requests.patch(url,data)
-    elif opcionsinopsis == "2":
-        print(" ")
+        elif opcionGenero == "2":
+            print(" ")
     
     
 
