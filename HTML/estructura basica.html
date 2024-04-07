@@ -132,9 +132,6 @@
             <!-- id es un atributo que me permite identificar la imagen. El valor que le asigno es único y no se puede repetir en el documento. Es importante para el CSS y el JavaScript-->
             
             
-            <input type="datetime-local" name="fecha">
-            <!--El elemento input me permite crear un campo de texto, que el usuario puede modificar o introducir. Tiene varios atributos que se pueden modificar-->
-            
             <h2 id="proyectos"> Proyectos Realizados</h2>
             
             <aside>
@@ -156,6 +153,23 @@
                     <li>Node.js</li>
                     <li>Python</li>
                     
+                </ol>
+
+                <!--Ol tambien puede empezar al reves-->
+
+                <ol type="1" reversed start="6">
+
+                <!--En este caso es una lista numerada. reversed me permite indicar que la lista se va a mostrar al revés. start me permite indicar el número con el que quiero que empiece la lista. type me permite indicar el tipo de numeración que quiero que tenga la lista. En este caso es una numeración normal.-->
+
+                    <li>Python</li>
+                    <li>Node.js</li>
+                    <li>React</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li value="0">HTML</li>
+
+                    <!--Value me permite indicar el número con el que quiero que empiece el elemento de la lista. En este caso quiero que empiece en 0.-->
+
                 </ol>
 
             </aside>
@@ -194,6 +208,66 @@
                         
                 </article>
                         
+            </section>
+
+            <section>
+                <h2>Formulario de contacto</h2>
+
+                <form method="post" action ="/">
+                <!--Form es un elemento que me permite crear formularios. Los formularios son importantes para que los usuarios puedan enviar información a la página. En method indico el método de envío de la información y en action indico la URL a la que se va a enviar la información.-->
+                
+                    <fieldset>
+                        <!--Fieldset es un contenedor que se utiliza para agrupar elementos de un formulario. Es importante para organizar el contenido del formulario.-->
+
+                        <legend>Información Personal</legend>
+                        <!--Legend es un elemento que me permite colocar un título a un fieldset. Es importante para organizar el contenido del formulario.-->
+
+
+                        <div>
+                            <!--Div es un contenedor que se utiliza para agrupar elementos. Es importante para organizar el contenido del formulario.-->
+
+                            <label for="name">
+
+                                <!--Label es un elemento que me permite colocar etiquetas a los campos de un formulario. Es importante para que los usuarios sepan qué información deben introducir en el formulario.-->
+                                
+                                <!--For me permite indicar a qué campo de texto pertenece la etiqueta label. En este caso pertenece al campo de texto con id name.-->
+                                
+                                Nombre
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Vincent van Gogh" required>
+                            <!--El elemento input me permite crear un campo de texto, que el usuario puede modificar o introducir. Tiene varios atributos que se pueden modificar. En type indico el tipo de campo de texto y en id y name indico un identificador único para el campo de texto. En placeholder indico un texto de ayuda para el usuario. Es importante para que los usuarios sepan qué información deben introducir en el campo de texto.-->
+                        </div>
+
+
+                        <div>
+                            <!--Otra forma de hacer que el label se asocie al input es envolver con el label el input y automaticamente se asocian-->
+                            <label>Email:
+                                <input type="email" name="email" placeholder="vangogh@gmail.com" required>
+
+                                <!-- required me permite indicar que el campo de texto es obligatorio. Es importante para que los usuarios introduzcan la información necesaria en el formulario.-->
+
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Información de Adicional</legend>
+                        <div>
+                            <label>Télefono
+                                <input type="tel" name="phone" placeholder="641890283" required>
+                            </label>
+                        </div>
+                        <div>
+                            <label>Fecha de cumpleaños:
+                                <input type="date" name="fecha" placeholder="24/01/2000">
+                            </label>
+                        </div>
+                    </fieldset>
+                    
+                    <input type="submit" value="Enviar">
+
+                </form>
+
             </section>
                     
         </main>
