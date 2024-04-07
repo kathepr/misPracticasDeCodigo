@@ -211,6 +211,27 @@
             </section>
 
             <section>
+                <h2>Preguntas Frecuentes</h2>
+                <details>
+                    <!--Details es un contenedor que se utiliza para colocar información adicional. Es importante para organizar el contenido de la página.-->
+                    <summary>¿Qué estudios tienes?</summary>
+                        <!--Summary es un elemento que me permite colocar un resumen de la información adicional. Es importante para organizar el contenido de la página.-->
+                    <p>Estudié en la universidad BLA, el pregrado de psicogía por 5 años</p>
+                </details>
+
+                <details>
+                    <summary>¿Cuales son tus hobbies?</summary>
+                    <p>Me gusta leer, el crochet, la acuarela</p>
+                </details>
+
+                <details>
+                    <summary>¿Cual es tu lenguaje favorito?</summary>
+                    <p>Python</p>
+
+            </section>
+
+
+            <section>
                 <h2>Formulario de contacto</h2>
 
                 <form method="post" action ="/">
@@ -262,6 +283,42 @@
                                 <input type="date" name="fecha" placeholder="24/01/2000">
                             </label>
                         </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Otros</legend>
+
+                        <div>
+                            <label for="why">¿Porque deseas ponerte en contacto?</label>
+                            <select name="why" id="why">
+                                <!--Select me permite crear un menú desplegable. Es importante para que los usuarios puedan seleccionar una opción del menú desplegable.-->
+
+                                <option value="1">Trabajo</option>
+                                <option value ="2">Duda</option>
+                                <option value ="3">Más información</option>
+                                <!--Option me permite crear opciones para el menú desplegable. Es importante para que los usuarios puedan seleccionar una opción del menú desplegable.-->
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="terms">¿Aceptas los términos?</label>
+                            <input type="checkbox" name="terms" id="terms" required>
+                        </div>
+
+                        <div>
+                            <datalist id="languages">
+                                <!--Datalist me permite crear una lista de opciones para un campo de texto. Es importante para que los usuarios puedan seleccionar una opción de la lista de opciones.-->
+                                <option value="JavaScript"></option>
+                                <option value="Python"></option>
+                                <option value="Java"></option>
+                                <option value="C++"></option>
+                            </datalist>
+                            <label>
+                                ¿Con qué lenguaje de programación deseas recibir apoyo?
+                                <input list="languages" name="languages" id="languages">
+                            </label>
+                        </div>
+
                     </fieldset>
                     
                     <input type="submit" value="Enviar">
