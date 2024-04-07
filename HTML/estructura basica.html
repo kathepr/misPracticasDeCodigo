@@ -25,7 +25,7 @@
         <meta name="theme-color" content="#8f7ada">
         <!--Meta theme-color me permite indicarle al navegador el color de la barra superior de la página. Esto es importante para la experiencia del usuario. En este caso el color es #8f7ada, que es un color morado-->
 
-        <link rel="icon" type="image/png" href="/images/Screenshot 2024-04-06 at 2.29.04 PM.png">
+        <link rel="icon" type="image/png" href="/images/Screenshot 2024-04-06 at 2.29.04 PM.png">
 
         <!-- Link me permite indicarle al navegador que cargue un archivo externo. En este caso estoy cargando un icono que se va a mostrar en la pestaña del navegador. En type indico el tipo de archivo y en href indico la ruta del archivo.Es importante para la experiencia del usuario -->
         
@@ -90,10 +90,56 @@
                 <!--A es un elemento que me permite colocar enlaces. Es importante para que los usuarios puedan navegar por la página. En href indico la URL del enlace, en target indico si quiero que se abra en una nueva pestaña y en rel indico si quiero que se abra en una nueva pestaña y sin referer. Sin referer significa que no se va a enviar información de la página anterior. Es importante para la seguridad de los usuarios.-->
             
             </nav>
+
+            <iframe style="width:100%; aspect-ratio: 16/9;"  src="https://www.youtube.com/embed/sxrLQz3RpqQ?si=PSuG4PEsv7MVj99c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <!--Iframe me permite colocar contenido de otras páginas en mi página. Es importante para mostrar contenido de otras páginas en mi página.-->
         
             
         </header>
+        <video controls src="/videos/sample_960x400_ocean_with_audio.mp4">
+
+                <!--Video me permite colocar videos en la página. Es importante para que los usuarios puedan ver videos en la página.-->
+
+                <!--Controls me permite mostrar los controles del video. Es importante para que los usuarios puedan controlar el video.-->
+
+                <!--autoplay me permite indicar que el video se reproduzca automáticamente. Es importante para que los usuarios no tengan que hacer clic en el video para que se reproduzca.-->
+
+                <!--muted me permite indicar que el video se reproduzca sin sonido. Es importante para que los usuarios no tengan que escuchar el sonido del video.-->
+
+                <!--loop me permite indicar que el video se reproduzca en bucle. Es importante para que el video se reproduzca una y otra vez.-->
+
+        </video>
+
+        <dialog id="dialog">
+            <!--Dialog me permite crear un cuadro de diálogo. Es importante para que los usuarios puedan interactuar con la página.-->
+
+            <!-- open me permite indicar que el cuadro de diálogo se muestre por defecto. Es importante para que los usuarios vean el cuadro de diálogo sin tener que hacer clic en él.-->
+
+            <h1>¿Sabias que puedes abrir una modal así?</h1>
+            <p>Y es totalmente nativo</p>
+            <button id="hide">Cerrar modal</button>
+
+        </dialog>
+
+        <button id="show">Ver más información</button>
         
+
+
+        <!--Script me permite colocar código JavaScript en la página. Es importante para que la página tenga interactividad.-->
+
+        <script>
+            window.show.addEventListener("click", () => {
+                window.dialog.showModal()
+            })
+            
+            window.hide.addEventListener("click", () => {
+                window.dialog.close()
+            })
+
+        </script>
+
+        <!--window me permite acceder a la ventana del navegador. Es importante para que el código JavaScript funcione correctamente.-->
 
 
         <main>
@@ -118,11 +164,7 @@
             
             <!--Las etiquetas de imageners no hace falta cerrarlas. Basta con indicar el source: src (Esto es un atributo)-->
             <!--Cree una carmeta que se llama images y arrastré la imagen que quiero colocar allí-->
-            <img
-            id="universo"
-            width = "400"
-            height = "400" 
-            title="Foto del Universo" 
+            <img id="universo" width = "400" height = "400" title="Foto del Universo" 
             alt="Una fotografía del Universo y el Cosmos" 
             src="/images/Screenshot 2024-04-06 at 2.29.04 PM.png">
             
@@ -179,36 +221,58 @@
                 Haz clic aquí
             </button>
                 
-            <section>
-                <!--Section es un contenedor que se utiliza para colocar secciones de contenido. Una section es un contenido que se puede separar del resto de la página.-->
-                
-                <article>
+            <div>
+
+                <section>
+                    <!--Section es un contenedor que se utiliza para colocar secciones de contenido. Una section es un contenido que se puede separar del resto de la página.-->
+                    
+                    <article>
                         <!--Article es un contenedor que se utiliza para colocar contenido independiente. Es diferente a una section porque un article es un contenido independiente y una section es un contenido que se puede separar del resto de la página.
-                        Un article tiene información propia, si tu llegaras a extraerlo de la página, seguiría teniendo sentido.-->
-                        <header>
-                            <!--Header es un contenedor que se utiliza para colocar encabezados. Los encabezados son importantes para organizar el contenido de la página.-->
-                            
-                            <h4>Sitio Web corporativo</h4>
-                        </header>
-                        
-                        <p>
-                            <!--P es un elemento que me permite colocar párrafos de texto. Es importante para organizar el contenido de la página.-->
-                            
-                            Sitio web corporativo para una empresa de tecnología. El sitio web cuenta con una interfaz moderna y atractiva. Además, tiene una sección de servicios, un blog y un formulario de contacto.
-                        </p>
-                        <footer>
-                            <!--Footer es un contenedor que se utiliza para colocar pies de página. Los pies de página son importantes para organizar el contenido de la página.-->
-                            <small> 
-                                <!--Small es un elemento que me permite colocar texto pequeño. Es importante para organizar el contenido de la página.-->
+                            Un article tiene información propia, si tu llegaras a extraerlo de la página, seguiría teniendo sentido.-->
+                            <header>
+                                <!--Header es un contenedor que se utiliza para colocar encabezados. Los encabezados son importantes para organizar el contenido de la página.-->
                                 
-                                Teconologías utilizadas: HTML, CSS, JavaScript
-                            </small>
+                                <h4>Sitio Web corporativo</h4>
+                            </header>
                             
-                        </footer>
+                            <p>
+                                <!--P es un elemento que me permite colocar párrafos de texto. Es importante para organizar el contenido de la página.-->
+                                
+                                Sitio web corporativo para una empresa de tecnología. El sitio web cuenta con una interfaz moderna y atractiva. Además, tiene una sección de servicios, un blog y un formulario de contacto.
+                            </p>
+                            
+                            <header>
+                                <h4>La pagina de Apple</h4>
+                                
+                                <img style="width:100%; aspect-ratio:638/317;" 
+                                loading="lazy"
+                                src="/images/Screenshot 2024-04-07 at 10.57.09 AM.png"
+                                alt="Captura pantalla apple">
+                                
+                                <!--Loading me permite indicarle al navegador que cargue la imagen de forma diferida. Es importante para que la página se cargue más rápido.-->
+                                
+                                <!-- No utilices loading lazy en imagenes que son importantes para el contenido de la página, ya que puede que no se carguen si el usuario no hace scroll hasta ellas-->
+                                
+                                <!--alt es un atributo que se utiliza para describir la imagen. Es importante para las personas que no pueden ver la imagen. Pero también es esencial para los buscadores como google-->
+                                
+                                
+                            </header>
+                            
+                            
+                            <footer>
+                                <!--Footer es un contenedor que se utiliza para colocar pies de página. Los pies de página son importantes para organizar el contenido de la página.-->
+                                <small> 
+                                    <!--Small es un elemento que me permite colocar texto pequeño. Es importante para organizar el contenido de la página.-->
+                                    
+                                    Teconologías utilizadas: HTML, CSS, JavaScript
+                                </small>
+                                
+                            </footer>
+                            
+                        </article>
                         
-                </article>
-                        
-            </section>
+                    </section>
+                </div>
 
             <section>
                 <h2>Preguntas Frecuentes</h2>
@@ -224,9 +288,13 @@
                     <p>Me gusta leer, el crochet, la acuarela</p>
                 </details>
 
-                <details>
+                <details open>
                     <summary>¿Cual es tu lenguaje favorito?</summary>
                     <p>Python</p>
+
+                    <!--Open me permite indicar que el contenido adicional se va a mostrar por defecto. Es importante para que los usuarios vean la información adicional sin tener que hacer clic en el resumen.-->
+
+                </details>
 
             </section>
 
@@ -280,7 +348,7 @@
                         </div>
                         <div>
                             <label>Fecha de cumpleaños:
-                                <input type="date" name="fecha" placeholder="24/01/2000">
+                                <input type="date" name="fecha">
                             </label>
                         </div>
                     </fieldset>
@@ -315,13 +383,17 @@
                             </datalist>
                             <label>
                                 ¿Con qué lenguaje de programación deseas recibir apoyo?
-                                <input list="languages" name="languages" id="languages">
+                                <input list="languages" name="languages">
                             </label>
                         </div>
 
                     </fieldset>
                     
                     <input type="submit" value="Enviar">
+                    <!--El type submit me permite crear un botón de envío. Es importante para que los usuarios puedan enviar la información del formulario.-->
+
+                    <!--Otra forma de crear este botón dentro de un formulario es así: -->
+                    <button>Enviar contacto</button>
 
                 </form>
 
