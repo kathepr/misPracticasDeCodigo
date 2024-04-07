@@ -29,7 +29,7 @@
 
         <!-- Link me permite indicarle al navegador que cargue un archivo externo. En este caso estoy cargando un icono que se va a mostrar en la pestaña del navegador. En type indico el tipo de archivo y en href indico la ruta del archivo.Es importante para la experiencia del usuario -->
         
-        <meta="description" content="Portafolio de Kathe, 3 años de experiencia como psicologa">
+        <meta name="description" content="Portafolio de Kathe, 3 años de experiencia como psicologa">
         <!--Meta description me permite colocar una descripción de la página. Esta descripción se muestra en los resultados de búsqueda de los buscadores. Es importante para el SEO-->
 
 
@@ -70,8 +70,141 @@
 
     </head>
 
+
+
     <body>
         <!--Body es el contenedor de todo el contenido que se va a mostrar en la página web.-->
-    </body>
 
+        <header>
+            <h1>Portafolito de Kathe</h1>
+
+            <!--   ENLACES INTERNOS   -->
+            <nav>
+                <!--Nav es un contenedor que se utiliza para colocar menús de navegación. Los menús de navegación son importantes para organizar el contenido de la página.-->
+
+                <a href="#experiencia">Experiencia</a>
+
+                <a href="#proyectos">Proyectos</a>
+                    
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank" rel="noreferrer">Contacto</a>
+                <!--A es un elemento que me permite colocar enlaces. Es importante para que los usuarios puedan navegar por la página. En href indico la URL del enlace, en target indico si quiero que se abra en una nueva pestaña y en rel indico si quiero que se abra en una nueva pestaña y sin referer. Sin referer significa que no se va a enviar información de la página anterior. Es importante para la seguridad de los usuarios.-->
+            
+            </nav>
+        
+            
+        </header>
+        
+
+
+        <main>
+            <!--Main es un contenedor que se utiliza para colocar el contenido principal de la página. El contenido principal es el contenido más importante de la página.-->
+            
+            <p>3 años de experiencia como <strong>Psicologa.</strong></p>
+            <!--El elemento strong no se utiliza para algo estetico, sino para darle énfasis a una palabra o frase. Es importante para el SEO-->
+            
+            <h2 id="experiencia">Experiencia</h2>
+            
+            <!-- El elemento ul me permite crear una lista desordenada (Tiene puntos). Adicionamente el ul debe ir acompañado de un li (list item) que es un elemento de la lista-->
+            <ul>
+                <li class="list-item"> Clinica Bla - 2019</li>
+                <li class="list-item">Clinica Pe - 2018</li>
+                <li class="list-item">Clinica Lo - 2017</li>
+            </ul>
+            
+            <!--El atributo class me permite identificar elementos que se repiten en el documento. Es importante para el CSS y el JavaScript-->
+            
+            
+            
+            
+            <!--Las etiquetas de imageners no hace falta cerrarlas. Basta con indicar el source: src (Esto es un atributo)-->
+            <!--Cree una carmeta que se llama images y arrastré la imagen que quiero colocar allí-->
+            <img
+            id="universo"
+            width = "400"
+            height = "400" 
+            title="Foto del Universo" 
+            alt="Una fotografía del Universo y el Cosmos" 
+            src="/images/Screenshot 2024-04-06 at 2.29.04 PM.png">
+            
+            <!-- alt es un atributo que se utiliza para describir la imagen. Es importante para las personas que no pueden ver la imagen. Pero también es esencial para los buscadores como google-->
+            <!-- title no es para hacer una descripción, sin embargo, da información de la fotografia cuando se pasa el mouse por encima de ella-->
+            <!-- width y height son atributos que me permiten modificar el tamaño de la imagen-->
+            <!-- id es un atributo que me permite identificar la imagen. El valor que le asigno es único y no se puede repetir en el documento. Es importante para el CSS y el JavaScript-->
+            
+            
+            <input type="datetime-local" name="fecha">
+            <!--El elemento input me permite crear un campo de texto, que el usuario puede modificar o introducir. Tiene varios atributos que se pueden modificar-->
+            
+            <h2 id="proyectos"> Proyectos Realizados</h2>
+            
+            <aside>
+                <!--Aside es un contenedor que se utiliza para colocar contenido secundario. Este contenido secundario no es tan importante como el contenido principal de la página.-->
+                
+                <header>
+                    <!--Header es un contenedor que se utiliza para colocar encabezados. Los encabezados son importantes para organizar el contenido de la página.-->
+                    
+                    <h3>Mis tecnologias favoritas</h3>
+                    
+                </header>
+                
+                <ol>
+                    <!--El elemento ol me permite crear una lista ordenada (Tiene números). Adicionamente el ol debe ir acompañado de un li (list item) que es un elemento de la lista-->
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    
+                </ol>
+
+            </aside>
+
+            <button>
+                <!--Button es un elemento que me permite crear botones. Los botones son importantes para que los usuarios puedan interactuar con la página.-->
+                Haz clic aquí
+            </button>
+                
+            <section>
+                <!--Section es un contenedor que se utiliza para colocar secciones de contenido. Una section es un contenido que se puede separar del resto de la página.-->
+                
+                <article>
+                        <!--Article es un contenedor que se utiliza para colocar contenido independiente. Es diferente a una section porque un article es un contenido independiente y una section es un contenido que se puede separar del resto de la página.
+                        Un article tiene información propia, si tu llegaras a extraerlo de la página, seguiría teniendo sentido.-->
+                        <header>
+                            <!--Header es un contenedor que se utiliza para colocar encabezados. Los encabezados son importantes para organizar el contenido de la página.-->
+                            
+                            <h4>Sitio Web corporativo</h4>
+                        </header>
+                        
+                        <p>
+                            <!--P es un elemento que me permite colocar párrafos de texto. Es importante para organizar el contenido de la página.-->
+                            
+                            Sitio web corporativo para una empresa de tecnología. El sitio web cuenta con una interfaz moderna y atractiva. Además, tiene una sección de servicios, un blog y un formulario de contacto.
+                        </p>
+                        <footer>
+                            <!--Footer es un contenedor que se utiliza para colocar pies de página. Los pies de página son importantes para organizar el contenido de la página.-->
+                            <small> 
+                                <!--Small es un elemento que me permite colocar texto pequeño. Es importante para organizar el contenido de la página.-->
+                                
+                                Teconologías utilizadas: HTML, CSS, JavaScript
+                            </small>
+                            
+                        </footer>
+                        
+                </article>
+                        
+            </section>
+                    
+        </main>
+        <footer>
+            Copyright 2024 - El contenido de esta página es propiedad de Kathe.
+
+            <a href="mailto:123@gmail.com">Envíame un correo</a>
+            <a href="tel:1234567890">Llámame</a>
+        </footer>
+                
+    </body>
+        
 </html>
+ 
