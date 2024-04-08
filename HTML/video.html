@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video html</title>
+</head>
+
+<body>
+
+  <h1>&nbsp;</h1>
+  <section>
+
+    <video src="videos/Ultimo-Il-bambino-che-contava-le-stelle.mp4" controls height="400px" width="600px" loop preload="none" poster="images/illustration-night-mountains-stars-wallpaper.jpg"></video>
+    
+    <!--controls sirve para que aparezcan los controles de reproducción, si no se colocan no aparecera nada en la pantalla-->
+    
+    <!--loop sirve para que la canción se repita una y otra vez-->
+    
+    <!--muted sirve para que la canción se reproduzca sin sonido-->
+    
+    <!--preload sirve para que la canción se cargue antes de que se reproduzca. Si colocamos "none" no se cargará, si colocamos "metadata" se cargará solo la información de la canción y si colocamos "auto" se cargará toda la canción-->
+    
+    <!--poster sirve para colocar una imagen de portada en el video-->
+    <!--Si quieres que se vea la imagen de portada el elemento no debe contener la etiqueta "autoplay"-->
+  </section>
+  
+  <h1>&nbsp;</h1>
+  <section>
+    <!--Otra forma para añadir el video es esta:-->
+    <video controls muted height="400px" width="600px"></video>
+
+      <source src="videos/sample_960x400_ocean_with_audio.wmv" type="video/wmv">
+
+      <source src="videos/sample_960x400_ocean_with_audio.mp4" type="video/mp4">
+
+      <!--La ventaja de esta forma de añadir audios es que podemos añadir varios audios en una misma sección y de distintos formatos-->
+      
+      <!--Si un navegador no soporta un formato de audio, se reproducirá el siguiente formato que se encuentre en la lista-->
+
+
+      
+  
+  </section>
+    
+    
+</body>
+</html>
