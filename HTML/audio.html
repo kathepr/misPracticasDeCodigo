@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+<body>
+  <h1>&nbsp;</h1>
+  <section>
+
+    <audio src="audio/Anne-Marie-Perfect-To-Me.mp3" controls loop autoplay muted preload="none"></audio>
+    <!--controls sirve para que aparezcan los controles de reproducción, si no se colocan no aparecera nada en la pantalla-->
+
+    <!--loop sirve para que la canción se repita una y otra vez-->
+
+    <!--autoplay sirve para que la canción se reproduzca automáticamente. Sin embargo, puede que no sirva en algunos navegadores o que sea molesto para el usuario-->
+
+    <!--muted sirve para que la canción se reproduzca sin sonido-->
+
+    <!--preload sirve para que la canción se cargue antes de que se reproduzca. Si colocamos "none" no se cargará, si colocamos "metadata" se cargará solo la información de la canción y si colocamos "auto" se cargará toda la canción-->
+
+  </section>
+  
+  <h1>&nbsp;</h1>
+  <section>
+    <!--Otra forma para añadir el audio es esta:-->
+    <!--La ventaja de esta forma de añadir audios es que podemos añadir varios audios en una misma sección y de distintos formatos-->
+    <!--Si un navegador no soporta un formato de audio, se reproducirá el siguiente formato que se encuentre en la lista-->
+
+    <audio controls loop muted>
+      <source src="audio/Anne-Marie-Perfect-To-Me.mp3" type="audio/mp3">
+      <source src="audio/Anne-Marie-Perfect-To-Me.ogg" type="audio/ogg">
+    </audio>
+
+  </section>
+
+
+</body>
+</html>
