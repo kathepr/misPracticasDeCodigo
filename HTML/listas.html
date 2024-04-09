@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listas HTML</title>
+</head>
+
+<body>
+  <form>
+    <!--form sirve para crear un formulario. Los formularios son una forma de interactuar con el usuario. Se pueden enviar datos a un servidor para ser procesados. Los formularios se crean con la etiqueta form. Esta etiqueta tiene un atributo action que indica la dirección a la que se enviarán los datos del formulario. También tiene un atributo method que indica el método de envío de los datos. Los métodos más comunes son GET y POST. GET envía los datos a través de la URL y POST envía los datos de forma oculta.-->
+
+
+    <select name="color_favorito" multiple size="2">
+      <!--Select sirve para crear una lista desplegable. Las listas desplegables permiten al usuario seleccionar una opción de una lista. Se crean con la etiqueta select. Esta etiqueta tiene un atributo name que indica el nombre de la lista. También tiene un atributo multiple que permite seleccionar varias opciones a la vez.-->
+
+      <!--multiple sirve para permitir que el usuario seleccione varias opciones a la vez. Se crea con el atributo multiple en la etiqueta select.--> 
+
+      <!--size sirve para establecer el número de opciones que se mostrarán en la lista desplegable. Se crea con el atributo size en la etiqueta select.-->
+
+      <option value="rojo">Rojo</option>
+      <option value="verde">Verde</json>
+      <option value="azul">Azul</option>
+      <option value="amarillo" selected>Amarillo</option>
+
+    </select>
+
+    <button>Enviar</button>
+  </form>
+
+  <form>
+    <input list="mes_favorito" name="mes_favorito">
+    <!--List sirve para crear una lista de opciones para un campo de texto. Se crea con la etiqueta datalist. Esta etiqueta tiene un atributo id que indica el nombre de la lista. Para asociar la lista con un campo de texto, se utiliza el atributo list en el campo de texto.-->
+    <!--Name sirve para asignarle un nombre al campo de texto. Este nombre se envía al servidor cuando se envía el formulario. No se coloca a datalist, porque es en input donde se va a enviar el valor seleccionado.-->
+
+    <datalist id="mes_favorito">
+      <!--Datalist se usa para crear las opciones de la lista-->
+        <option value="enero">
+        <option value="febrero">
+        <option value="marzo">
+        <option value="abril">
+        <option value="mayo">
+        <option value="junio">
+        <option value="julio">
+        <option value="agosto">
+        <option value="septiembre">
+        <option value="octubre">
+        <option value="noviembre">
+        <option value="diciembre">
+
+    </datalist>
+
+    <!--Value va a mostrar lo que se coloco dentro del elemento value, en este caso los meses del año.-->
+
+
+  </form>
+  
+</body>
+</html>
