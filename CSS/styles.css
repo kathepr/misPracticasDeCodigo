@@ -1,0 +1,13 @@
+p{
+    color: red;
+}
+
+/* 
+
+p - en este ejemplo es un selector. Debemos seleccionar los elementos que queremos modificar.
+
+Luego vamos a colocar la propiedad que vamos a tocar, en este caso es el color. 
+
+Luego colocamos el valor, en el caso del color, escogimos red. 
+
+*/

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlazando CSS</title>
+
+
+<!--Tercera forma: -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!--el atributo rel se utiliza en la etiqueta <link> para especificar la relación entre el documento actual y el recurso al que enlaza el enlace. La palabra "rel" es una abreviatura de "relationship" (relación en inglés). 
+        
+    En este caso, lo vinculo como una hoja de estilos al archivo styles.css-->
+
+
+
+
+<!--Segunda forma: -->
+    <style>
+        p{
+            color: red
+        }
+
+        h1{
+            color:blue
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+<!--Primera Forma:-->    
+    <h1>CSS STYLE COMO ATRIBUTO</h1>
+    <p style="color:red" font-size:"20px">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, quas vel. Consequatur asperiores laborum, odit voluptatem ipsum nihil. Vero laboriosam, temporibus possimus provident excepturi nemo delectus consequuntur? Cumque, obcaecati a?</p><br>
+
+    <!--Las propiedades en línea CSS son aquellas que se aplican directamente en el elemento HTML mediante el atributo style-->
+
+
+    <!--OJO: Sin embargo, se recomienda no mezclar en un mismo lugar HTML con CSS como se hizo en el ejemplo anterior-->
+
+    <!--Se recomienda utilizar style como como etiqueta y NO como atributo-->
+
+
+<!--Segunda forma: -->
+    <h1>CSS STYLE COMO ETIQUETA</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At rerum, animi illum earum, nemo, facere quod accusantium facilis debitis optio culpa amet doloribus vero consectetur placeat iure! A, consequatur eius.</p>
+
+    <!--Mirar style en HEAD del documento html-->
+
+
+
+
+
+<!--Tercera forma: -->
+
+    <!--                      OJO:
+        Sin embargo, LA MEJOR PRACTICA ES TENER EN UN DOCUMENTO EL HTML Y EN OTRO APARTE EL CSS.
+
+        Para esto usamos una etiqueta especial que se llama link. 
+    -->
+    <h1>CSS STYLE EN OTRO DOCUMENTO Y USANDO ETIQUETA LINK</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quibusdam velit distinctio explicabo et, esse illum rem, temporibus nihil minus delectus itaque optio cum. Corrupti est dolor molestiae quia magni.</p>
+
+    <!--Mira el HEAD DEL DOCUMENTO HTML-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Existe style:
+    1. background-color: Define el color de fondo de un elemento.
+
+    2. color: Especifica el color del texto.
+    
+    3.font-family: Define la familia de fuentes que se utilizará para el texto.
+    
+    4. font-size: Establece el tamaño de la fuente.
+    
+    5.font-weight: Indica el grosor de la fuente (por ejemplo, normal, bold, etc.).
+    
+    6.text-align: Define la alineación horizontal del texto (izquierda, derecha, centrado, justificado).
+    
+    7.text-decoration: Controla la decoración del texto (subrayado, tachado, etc.).
+    
+    8.padding: Define el espacio interior entre el contenido del elemento y sus bordes.
+    
+    9.margin: Establece el espacio externo alrededor de un elemento.
+    
+    10.border: Controla las propiedades del borde (ancho, estilo y color).
+    
+    11.width: Especifica el ancho del elemento.
+    
+    12.height: Define la altura del elemento.
+    
+    13.display: Controla cómo se muestra el elemento en el flujo del documento (bloque, en línea, etc.).
+    
+    14.position: Define el método de posicionamiento del elemento (por ejemplo, relativo, absoluto, fijo).
+    
+    15.float: Indica si un elemento debe flotar a la izquierda o a la derecha de su contenedor.
+    
+    16.clear: Especifica si un elemento debe estar en línea con elementos anteriores o flotantes.
+    
+    17.overflow: Controla qué hacer cuando el contenido de un elemento es demasiado grande para caber en su área asignada.
+    
+    18.text-transform: Define cómo se transforma el texto (mayúsculas, minúsculas, capitalizado).
+    
+    19.line-height: Establece la altura de línea dentro del elemento.
+    
+    20.box-shadow: Agrega una sombra alrededor del elemento.-->
+
+</body>
+</html>
