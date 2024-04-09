@@ -28,6 +28,74 @@
     <input type="url" placeholder="URL"><br>
     <!--Url sirve para crear un campo de texto para escribir direcciones de internet. Este campo verifica que lo que se escriba sea una dirección de internet-->
 
+    <input type="date" placeholder="Fecha"><br>
+    <!--Date sirve para crear un campo de texto para escribir fechas-->
+
+    <input type="time" placeholder="Hora"><br>
+    <!--Time sirve para crear un campo de texto para escribir horas-->
+
+    <input type="datetime-local" placeholder="Fecha y hora"><br>
+    <!--Datetime-local sirve para crear un campo de texto para escribir fechas y horas-->
+
+    <input type="month" placeholder="Mes"><br>
+    <!--Month sirve para crear un campo de texto para escribir meses-->
+
+    <input type="week" placeholder="Semana"><br>
+    <!--Week sirve para crear un campo de texto para escribir semanas-->
+
+    <input type="number" placeholder="Número" min="5" max="20" step="5"><br>
+    <!--Number sirve para crear un campo de texto para escribir números. Tiene flechas para aumentar o disminuir el número-->
+    <!--Min y max sirven para establecer un rango de números que se pueden escribir en el campo-->
+    <!--Step sirve para establecer el incremento o decremento de los números que se escriben en el campo. En este caso, se incrementa o decrementa de 5 en 5. Tambien se pueden colocar numeros decimales-->
+
+    <input type="range" min="0" max="100" step="10"><br>
+    <!--Range sirve para crear un campo de texto para escribir números en un rango. Se muestra una barra que se puede mover para seleccionar un número-->
+    <!--Min y max sirven para establecer un rango de números que se pueden escribir en el campo-->
+    <!--Step sirve para establecer el incremento o decremento de los números que se escriben en el campo. En este caso, se incrementa o decrementa de 10 en 10-->
+    <!--Un ejemplo de su uso en la vida real es en el volumen de un reproductor de música o cuando el usuario selecciona los precios de un producto en una página web-->
+
+    <input type="file" multiple><br>
+    <!--File sirve para crear un campo de texto para subir archivos-->
+    <!--Multiple sirve para seleccionar varios archivos a la vez, en lugar de solo uno-->
+
+    <input type="color"><br>
+    <!--Color sirve para crear un campo de texto para seleccionar un color. Se muestra una paleta de colores para seleccionar uno-->
+
+
+
+
+
+
+
+    <input type="radio" id="femenino" name="genero" value="femenino" checked>
+    <label for="femenino">Femenino</label>
+
+    
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="masculino">Masculino</label><br>
+    <!--Radio sirve para crear un campo de texto para seleccionar una opción de varias opciones. Solo se puede seleccionar una opción-->
+    <!--Name sirve para agrupar los campos de texto de tipo radio. Solo se puede seleccionar una opción de todos los campos de texto que tengan el mismo name. Por lo tanto es importante colocarle el mismo name a los campos-->
+    <!--Id sirve para identificar el campo de texto. Se utiliza para relacionar el campo de texto con la etiqueta label-->
+    <!--Value sirve para asignarle un valor al campo de texto. Este valor se envía al servidor cuando se envía el formulario. Si no lo colocas, no se envía nada al servidor-->
+    <!--Checked sirve para seleccionar una opción por defecto. Solo se puede seleccionar una opción por defecto en todos los campos de texto que tengan el mismo name-->
+
+    <h2>Lenguajes de Programación</h2>
+
+      <!--Checkbox sirve para crear un campo de texto para seleccionar opciones. Se pueden seleccionar varias opciones-->
+
+      <label for="javascript">
+        <input type="checkbox" id="javascript" name="lenguajes_programacion" value="javascript" checked>JavaScript
+      </label>
+
+      <label for="java">
+        <input type="checkbox" id="java" name="lenguajes_programacion" value="java">Java
+      </label>
+
+      <label for="python">
+        <input type="checkbox" id="python" name="lenguajes_programacion" value="python" checked>Python
+      </label>
+
+      <!--En este caso checked se puede colocar en varias opciones, ya que se pueden seleccionar varias opciones a la vez-->
 
     <button>Enviar</button>
   </form>
