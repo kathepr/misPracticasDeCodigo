@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botones en HTML</title>
+</head>
+<body>
+
+  <h1>Primera forma de hacer un botón con input</h1>
+  <form>
+    <input type="text" name="campo1" placeholder="Escribe tu nombre">
+    <input type="submit" value="Enviar el Formulario" name="boton1" disabled>
+    <!--disabled sirve para deshabilitar el botón. Se crea con el atributo disabled en la etiqueta input.-->
+
+    <input type="image" src="images/button-send.png" alt="Enviar" height="80" width="80">
+    <!--El botón de tipo imagen es un botón que muestra una imagen.-->
+
+    <input type="reset" value="Borrar Formulario" name="boton2">
+    <!--El botón reset sirve para limpiar los campos de un formulario.-->
+
+    <input type="button" value="Botón" name="boton3"><br
+    <!--El botón de tipo button es un botón que no hace nada por defecto. Se puede programar con JavaScript para que haga algo.-->
+  
+  </form>
+
+  <h1>Segunda forma de hacer un botón con button</h1>
+  <form>
+
+    <input type="text" name="campo1" placeholder="Escribe tu nombre">
+
+    <button name="boton">
+      <img src="images/button-send.png" alt="Enviar formulario" height="80" width="80"><p>Enviar</p>
+      <!--Se puede poner una imagen y un texto en un botón.-->
+
+    </button>
+
+    <button type="reset"><p>Borrar</p></button>
+    <!--El botón de tipo reset sirve para limpiar los campos de un formulario.-->
+
+    <button type="button">Botón</button>
+    <!--El botón de tipo button es un botón que no hace nada por defecto. Se puede programar con JavaScript para que haga algo.-->
+
+
+  </form>
+  
+
+
+</body>
+</html>
