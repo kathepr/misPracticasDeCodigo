@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form>
+    <!--Form sirve para crear un formulario-->
+
+
+    <fieldset>
+      <!--Fieldset sirve para crear un grupo de campos de texto-->
+      <legend>Datos del usuario</legend>
+        <!--Legend sirve para crear un título para el grupo de campos de texto-->
+      
+      <label for="nombre_usuario">Escriba su nombre: </label>
+      <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Escribe aquí tu Nombre" size="40"> <br>
+      <!--Label sirve para crear una etiqueta-->
+      <!--For sirve para relacionar la etiqueta con el campo de texto-->
+      <!--Input sirve para crear un campo de texto-->
+      <!--Type sirve para definir el tipo de campo que se va a crear-->
+      <!--Id sirve para identificar el campo de texto-->
+      <!--Name sirve para darle un nombre al campo de texto y que el cliente que reciba la información sepa a qué campo corresponde. también es importante para lograr mandar la información a un servidor-->
+      <!--size sirve para definir el tamaño del campo de texto en este caso se define en 40 caracteres-->
+      <!--br sirve para hacer un salto de línea-->
+
+      <label for="apellido_usuario">Escribe tu apellido: </label>
+      <input type="text" id="apellido_usuario" name="apellido_usuario" placeholder="Escribe aquí tu Apellido" minlength="2" maxlength="5"> <br>
+      <!--Minlength sirve para definir el mínimo de caracteres que se pueden escribir en el campo de texto-->
+      <!--Maxlength sirve para definir el máximo de caracteres que se pueden escribir en el campo de texto-->
+      <!--Se diferencia de size en que size define el tamaño del campo de texto y minlength y maxlength definen el mínimo y máximo de caracteres que se pueden escribir en el campo de texto. Si se sobrepasa l valor de size se puede seguir escribiendo pero si se sobrepasa el valor de minlenght-maxlength no se puede seguir escribiendo-->
+
+      <label for="email_usuario">Escribe tu email: </label>
+      <input type="email" id="email_usuario" name="email_usuario" placeholder="Escribe aquí tu Email" autofocus required> <br>
+      <!--autofocus sirve para que el campo de texto se seleccione automáticamente al cargar la página-->
+      <!--autofocus se puede usar en un solo campo de texto por página-->
+      <!--Required sirve para que el campo de texto sea obligatorio-->
+
+
+    </fieldset>
+    <fieldset>
+      <legend>Pasatiempos del usuario</legend>
+
+      <label for="pasatiempo">Escribe tu pasatiempo favorito: </label>
+      <input type="text" id="pasatiempo" name="pasatiempo" placeholder="Escribe aquí tu Pasatiempo"> <br>
+      
+    </fieldset>
+    <button>Enviar</button>
+    <!--Button sirve para crear un botón-->
+
+  </form>
+
+
+
+
+
+
+  <div>
+
+    <h1>&nbsp;</h1>
+    <h1>ESTAS SON OTRAS PROPIEDADES DEL FORMULARIO</h1>
+
+    <form>
+      <input type="text" disabled name="disabled" value="Kathe">
+      <input type="text" readonly name="readonly" value="Kathe">
+
+      <button>Enviar</button>
+
+      <!--Disabled sirve para deshabilitar el campo de texto, es decir, que no se pueda escribir en él-->
+      <!--Readonly sirve para que el campo de texto no se pueda editar-->
+      <!--La diferencia se evidencia en que en el campo de texto deshabilitado no se puede escribir y en el campo de texto de solo lectura se puede seleccionar el texto pero no se puede editar-->
+      <!--Al enviar el formulario el unico de los datos que se envia es el readonly, el disabled no se envia-->
+      <!--Un ejemplo en el que se usan estos atributos es en un formulario de registro en el que se quiere que el usuario no pueda cambiar su nombre de usuario pero si pueda verlo-->
+      
+
+    </form>
+  </div>
+
+</body>
+</html>
