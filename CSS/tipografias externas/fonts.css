@@ -1,0 +1,11 @@
+@font-face {
+
+    font-family: "montserrat";
+    src: url(static/Montserrat-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Kathe";
+    src: url(fonts/Montserrat-LightItalic.ttf) format("truetype");
+    font-weight: 400;
+}

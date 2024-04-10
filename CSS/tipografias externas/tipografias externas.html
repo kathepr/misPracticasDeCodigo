@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primera forma -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+<!--Segunda forma-->
+    <link rel="stylesheet" hred="fonts.css">
+    
+    <title>Tipografias externas</title>
+</head>
+
+<body>
+    <h1>Tipografias externas</h1>
+    <section>
+        <h2>Primera forma</h2>
+        <p>
+            1. Ir a google fonts: <a href="https://fonts.google.com/">Google Fonts</a>
+            2. Busca la tipografia de tu agrado.
+            3. Selecciona  la versión de la tipografia que quieres
+            4. Dale click a Get Font
+            5. Se va a desplegar un menú
+            6. Vas a copiar los links que genera en "Embed code in the head of your html"
+            7. Luego vas a pegar todo lo que copias en el "head" del documento html. 
+            8.Para acceder a la tipografia, vas al documento css.
+            9.
+            
+        </p>
+    </section>
+    <section>
+        <h2>Segunda Forma</h2>
+        <p>
+            1. Crear un documento css adicional que se llame: fonts.css
+            2. En el apartado de head, vas a vincular el documento html con el documento de fonts.css
+            3.Se hace así: link rel="stylesheet" href="fonts.css"
+            4. Alli vas a escribir 
+            
+            @font-face {
+                font-family: ;
+                src: url();
+                        }
+            5. En google vas a descargar en documento zip la tipografia.
+            6. Extraes el documento de la carpeta zip
+            7. Vas a ingresar al archivo extraido y vas a tomar la carpeta static
+            8. Dentro de static vas a encontrar todos los tipos de tipografias.
+            9. En este caso, vamos a escoger Montserrat Regular
+            10. Dentro del documento css fonts.css, vamos a escribir en la url la ubicacion de la carpeta donde esta la tipografia que queremos y la escogemos
+            11. Adicionalmente le vamos a poner el formato: truetype, el cual es uno de los formatos de fuente más comunes y ampliamente compatibles en la web
+
+
+
+        </p>
+    </section>
+    
+</body>
+</html>
