@@ -1,0 +1,51 @@
+p {
+    /* color: Define el color del texto. */
+    color:rgb(67, 67, 252);
+
+    /* font-family: Esta propiedad define la fuente o conjunto de fuentes que se utilizarán para el texto. Se puede especificar una lista de fuentes en orden de preferencia, separadas por comas, para que el navegador elija la primera disponible */
+    font-family:'Courier New', Courier, monospace;
+
+
+    /* Especifica el grosor del texto. Puede ser normal, bold (negrita), lighter (más ligero), o valores numéricos como 100, 200, ..., 900. */
+    font-weight:bold;
+
+    /* font-style: Define el estilo del texto, como normal, italic (cursiva) o oblique. */
+    font-style: oblique;
+
+    /* font-size: Define el tamaño del texto. Se puede especificar en píxeles, ems, porcentajes u otras unidades. */
+    font-size: 16px;
+
+    /* text-align: se utiliza para controlar la alineación horizontal del texto dentro de un elemento */
+    text-align:center;
+
+    /* text-decoration: Controla la decoración del texto, como subrayado, tachado, etc. */
+    text-decoration:underline;
+
+    /* line-height: Controla la altura de línea del texto. */
+    line-height:5.2;
+
+    /* letter-spacing: Define el espaciado entre caracteres. */
+    letter-spacing:10px;
+
+    /* text-transform: Cambia el capitalizado del texto, por ejemplo, a mayúsculas, minúsculas o capitalizado. */
+    text-transform: capitalize;
+
+    /* word-spacing: Define el espaciado entre palabras. */
+    word-spacing: 15px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+span{
+    text-decoration:line-through;
+    color: coral
+}
+
+a{
+    color:brown;
+    text-decoration: none;
+    font-size: 50px;
+}
