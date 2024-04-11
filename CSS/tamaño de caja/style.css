@@ -12,12 +12,18 @@ body {
 .box-default {
     padding: 25px;
     border: 10px solid black;
+
+    /* En este caso la caja aumenta de tamaño. De forma predeterminada el box sizing es content-box, lo que significa que el ancho y alto del elemento no incluye el padding y el borde. Solo incluye el contenido. */
 }
 
 .new-box {
     box-sizing:border-box;
     padding: 25px;
     border: 10px solid black;
+    /* En este caso, el contenido se adapta para que la caja no aumente de tamaño. Al cambiar el box-sizing a border-box, el ancho y alto del elemento incluye el padding y el borde. */
+
+
+
 
     /* box sizing es una propiedad que se utiliza para indicar si el ancho y alto de un elemento incluye el padding y el borde, o no.
     Por default, el valor de box-sizing es content-box, lo que significa que el ancho y alto del elemento no incluye el padding y el borde. Solo incluye el contenido.
