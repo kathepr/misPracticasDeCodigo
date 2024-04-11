@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(198, 198, 255);
+    
+}
+
+.card{
+    background: rgb(255, 144, 218);
+    text-align: center;
+    width:300px;
+    margin: auto;
+    margin-top: 20px;
+
+    /* El margin auto es para centrar horizontalmente el div en la pagina */
+}
+
+h1 {
+    padding-top: 10px;
+    font-size: 22px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 13px;
+    font-weight: 100px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 9px;
+    font-weight: 100px;
+    letter-spacing: 2px;
+    padding: 20px;
+    background: rgb(125, 192, 249);
+    text-align: justify;
+}
