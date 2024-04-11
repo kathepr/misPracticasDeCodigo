@@ -1,0 +1,27 @@
+div {
+    background-color: red;
+    width: 400px;
+    height: 200px;
+
+    /* Para poder verlo en el navegador, se debe determinar un alto y ancho al div, ya que si no se le asigna un alto y ancho, el div no se visualizará en el navegador. */
+}
+
+h1{
+    background: blue;
+    height: 100px;
+    width: 200px;
+
+}
+
+input {
+    width: 30%;
+    height: 10%;
+    /* El porcentaje se refiere al ancho del contenedor padre, en este caso el form, por lo que el input ocupará el 30% del ancho del form y el 10% de la altura del form. */
+}
+
+form {
+    width: 400px;
+    height: 500px;
+    background: lightskyblue;
+   
+}
