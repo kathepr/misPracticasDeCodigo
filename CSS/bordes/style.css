@@ -1,0 +1,60 @@
+div {
+    background: rgb(246, 157, 227);
+    width: 200px;
+    margin: auto;
+    text-align: center;
+
+    /* Para poder ver el borde necesitamos agregar las siguientes propiedades: */
+
+    border-width: 3px;
+    border-color: rgb(203, 73, 144);
+    border-style: dotted;
+
+    /* Border radius es una propiedad que nos permite redondear las esquinas del borde. Se pueden usar pixeles o porcentajes*/
+
+    border-radius: 10px;
+
+
+    /* Hay una forma de resumirlo:
+    border: 3px dotted rgb(203, 73, 144);
+    Esto es igual a border-width, border-style y border-color.
+
+    Border radius es una propiedad que funciona aparte. */
+
+    padding: 10px;
+
+
+}
+
+h1 {
+    color: white;
+    padding: 10px;
+    border: 5px solid whitesmoke;
+
+    /* Esta forma de resumir el borde representa: 5px de ancho, estilo de borde sólido y color blanco. */
+
+
+    border-radius: 50px 50px 10px 10px;
+
+    /* El border radius representa: 50px en la esquina superior izquierda, 50px en la esquina superior derecha, 10px en la esquina inferior derecha y 10px en la esquina inferior izquierda. */
+    
+}
+
+p {
+    border-top: 3px solid pink;
+    border-bottom: 3px solid pink;
+    width: 100px;
+    margin: auto;
+
+}
+
+input {
+    margin: 5px;
+    padding: 6px 9px;
+    /* Este padding representa 6px arriba y abajo y 9px a los lados. */
+    border: none;
+    border-bottom: 1px solid rgb(203, 73, 144);
+    background: whitesmoke;
+    color:rgb(203, 73, 144);
+    border-radius: 5px;
+}
