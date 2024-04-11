@@ -1,0 +1,72 @@
+.formulario {
+    background: red;
+    padding: 10px;
+
+    /* Esto significa que el padding de arriba es de 10px, el de la derecha es de 10px, el de abajo es de 10px y el de la izquierda es de 10px.*/
+
+     /*               OJO
+    Si se colocara padding: 10px 20px;
+    Esto significa que el padding de arriba y el padding de abajo es de 10px, y el padding de la derecha y el padding de la izquierda es de 20px. */
+}
+
+.formulario_input {
+    padding: 10px 0 40px 0;
+    background:black;
+    color:red;
+    margin: 10px
+
+    /* Esto significa que el padding de arriba es de 10px, el de la derecha es de 0, el de abajo es de 40px y el de la izquierda es de 0.
+
+    Es como escribir:
+    padding-top 10px; 
+    padding-right: 0; 
+    padding-bottom: 40px; 
+    padding-left: 0; */
+
+
+     /* con margin lo que estoy haciendo es separar las cajas de formulario input 10px entre ellas. */
+
+
+}
+
+.formulario_submit {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: red;
+    color: white;
+    width: 50%
+}
+
+
+.box {
+    background: rgb(199, 150, 255);
+    padding: 50px;
+    height: 150px;
+    width: 150px;
+    margin:30px;
+
+}
+
+
+body {
+    margin: 0px;
+}
+
+.caja1{
+    background: navajowhite;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.caja2{
+    background: navajowhite;
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+}
+
+/* Aunque el margin-top de la caja2 es de 30px y el margen de la caja1 es de 20px, siempre se toma el mayor valor de los margenes, es decir, el de la caja2. Por lo tanto, la caja2 se separa 30px de la caja1. Los margenes no se suman. */
+
+/* el margin de un elemento se refiere a la separación que hay entre un elemento y otro. y el padding de un elemento se refiere a la separación que hay entre el contenido de un elemento y el borde de ese elemento. */
