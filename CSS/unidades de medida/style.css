@@ -1,0 +1,76 @@
+html {
+    font-size: 30px;
+    /* Aquí estamos estableciendo el tamaño de la fuente de la página en 30px. */
+
+}
+
+
+div {
+    background: #ededed;
+    font-family: sans-serif;
+    border-left: 2px solid #999;
+    width: 200px;
+    font-size: 30px;
+
+
+}
+
+h1{
+    margin:0;
+    font-size: 24px;
+    background-color: aqua;
+    height: 50vh;
+    width: 50vw;
+    /* Aquí el tamaño del h1 será el 50% del alto de la ventana del navegador. vh significa viewport height. */
+    /* Aquí el tamaño del h1 será el 50% del ancho de la ventana del navegador. vw significa viewport width. */
+}
+
+
+span {
+    color:#999;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+p{
+    color: #555;
+    background: red;
+    margin:0;
+    width: 50%;
+    font-size: 1em;
+    /* Aqui el porcentaje es relativo al tamaño de su contenedor. En este caso, como el contenedor es el div, el ancho del párrafo será el 50% del ancho del div */
+
+    /* En este caso 1 em es igual a 30px, ya que el tamaño de la fuente del div es de 30px. */
+}
+
+h2 {
+    font-size: 1rem;
+    /* Aquí el tamaño de la fuente del h2 será igual al tamaño de la fuente del html, ya que 1rem es igual al tamaño de la fuente del html. Especificamente equivale a 30px. */
+}
+
+
+
+/* Tipos de unidades de medida:
+
+1. Pixeles (px): Son medidas absolutas, es decir, no cambian su tamaño en función de otros elementos de la página.
+
+2. Porcentages (%): Son medidas relativas, es decir, cambian su tamaño en función de otros elementos de la página y respecto al tamaño de su contenedor.
+
+3. Cm, mm, in: Son medidas absolutas, es decir, no cambian su tamaño en función de otros elementos de la página. Se usan cuando se necesita imprimir.
+
+3. Em (em): Es una medida relativa, es decir, cambia su tamaño en función de otros elementos de la página y respecto al tamaño de su contenedor. Se mide en relación al tamaño de la fuente del elemento padre.
+
+4. Rem (rem): Es una medida relativa, es decir, cambia su tamaño en función de otros elementos de la página y respecto al tamaño de su contenedor. Se mide en relación al tamaño de la fuente del elemento raíz (html).
+
+5. Viewport: Son medidas relativas, es decir, cambian su tamaño en función de otros elementos de la página y respecto al tamaño de la ventana del navegador. Se mide en relación al tamaño de la ventana del navegador. Algunas son: vh (viewport height), vw (viewport width), vmin (viewport minimum), vmax (viewport maximum).
+
+El vmin es el tamaño más pequeño entre el alto y el ancho de la ventana del navegador. y el vmax es el tamaño más grande entre el alto y el ancho de la ventana del navegador.
+
+
+
+OJO:
+
+Si el elemento que contiene a otro no tiene definido un font-size, el tamaño de la fuente del hijo se medirá en relación al tamaño de la fuente del elemento padre más cercano que tenga un tamaño de fuente definido. Si ninguno de los elementos padres tiene un tamaño de fuente definido, el tamaño de la fuente va a ser por defecto de 16px.
+
+*/
+
