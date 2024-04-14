@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #c8c8c8;
+}
+
+div,body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+    align-items: start;
+    border: 2px solid #000;
+    background-color: #fff;
+    height: 300px;
+
+
+
+
+}
+
+
+
+.flex-item {
+    background-color: #911;
+    color:aliceblue;
+    font-size: 40px;
+    text-align: center;
+    flex: 1 1 100px;
+
+    
+ 
+
+ 
+
+
+
+}
+
+.flex-item:first-child {
+    background-color:#911;
+
+
+
+
+
+}
+
+.flex-item:last-child {
+    background-color: rgb(62, 14, 25);
+    align-self: stretch;
+ 
+}
+
+.flex-item:nth-child(2n) {
+    background-color: #f77;
+}
+
+.flex-item-5 {
+    align-self: stretch;
+    
+    
+    /* 
+    align-self sirve para alinear un item hijo en particular. Existen 5 valores posibles:
+
+    - flex-start: alinea el item al inicio del contenedor
+
+    - flex-end: alinea el item al final del contenedor
+
+    - center: alinea el item en el centro del contenedor
+
+    - baseline: alinea el item en la base del contenedor
+
+    - stretch: estira el item para que ocupe todo el alto del contenedor
+
+    */
+    
+}
