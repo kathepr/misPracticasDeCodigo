@@ -1,0 +1,77 @@
+
+body {
+    background-color: #ff0084;
+    margin: 0px;
+}
+.box {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(#ffc4f9, transparent);
+    margin: 0px;
+    width: 100%;
+
+}
+
+/* Para darle un gradiente a los fondos de las cajas, se puede utilizar la propiedad background o background-image (con la función linear-gradient())
+
+linear-gradient() es una función que permite crear un gradiente lineal, es decir, un degradado de color que se aplica en una dirección específica. La función recibe como argumentos los colores que se quieren utilizar en el gradiente y la dirección en la que se quiere aplicar. 
+
+El primer color es el que se verá al principio del gradiente y el último color es el que se verá al final del gradiente. */
+
+h1 {
+    margin: 0px;
+    color: #680037;
+    font-family:sans-serif;
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+.caja {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(#000a,transparent, #000a);
+    margin: 0px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-top: 6px solid #ff0084;
+    /* transform: rotate(90deg); */
+    /* transform sirve para rotar un elemento en un ángulo específico. En este caso, se está rotando la caja 90 grados para que el gradiente se aplique en la dirección horizontal. */
+
+}
+
+h2 {
+    margin: 0px;
+    text-align: center; 
+    padding: 50px;
+    color:#ffc4f9;
+    font-family:sans-serif;
+   
+ 
+}
+
+.cajita {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(transparent, #000a);
+    margin: 0px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-top: 6px solid #ff0084;
+
+    /* radial-gradient() es una función que permite crear un gradiente radial, es decir, un degradado de color que se aplica en forma circular. La función recibe como argumentos los colores que se quieren utilizar en el gradiente y la forma en la que se quiere aplicar. */
+
+}
+
+.cajota{
+    width: 400px;
+    height: 400px;
+    background: conic-gradient(transparent, #000a);
+    margin: 0px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-top: 6px solid #ff0084;
+
+    /* conic-gradient() es una función que permite crear un gradiente cónico, es decir, un degradado de color que se aplica en forma circular. La función recibe como argumentos los colores que se quieren utilizar en el gradiente y la forma en la que se quiere aplicar. */
+}
