@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #c8c8c8;
+}
+
+div,body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    align-items: center;
+    justify-content: start;
+    background-color: #fff;
+    gap: 20px;
+
+
+}
+
+
+
+.flex-item {
+    background-color: #911;
+    color:aliceblue;
+    font-size: 40px;
+    text-align: center;
+    direction: rtl;
+    width: 200px;
+    flex-grow: 1px;
+    flex-shrink: 1px;
+    flex-basis: 100px;
+
+
+    flex: 1 1 100px;
+    /* flex se escribe en una sola línea, con los valores de flex-grow, flex-shrink y flex-basis separados por espacios. Por ejemplo, flex: 1 1 100px; establece flex-grow en 1, flex-shrink en 1 y flex-basis en 100px. Puede establecer un valor específico para flex-grow, flex-shrink y flex-basis, como 0, para que un elemento no crezca, no se reduzca y tenga un tamaño inicial de 0 en el contenedor. La propiedad flex en CSS se utiliza para establecer las propiedades flex-grow, flex-shrink y flex-basis de un elemento en un contenedor Flexbox. */
+    
+ 
+
+ 
+
+
+
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+    flex-shrink: 5;
+
+
+
+
+}
+
+.flex-item:last-child {
+    background-color: rgb(62, 14, 25);
+ 
+}
+
+
+
+
+
+
+/* flex-shrink se utiliza para especificar cuánto espacio adicional debe ocupar un elemento hijo en un contenedor flexbox. Por defecto, todos los elementos flexbox tienen un flex-shrink de 1, lo que significa que se reducirán para ocupar espacio adicional en el contenedor. Puede establecer un valor específico para flex-shrink, como 0, para que un elemento no se reduzca y ocupe espacio adicional en el contenedor. */
+
+
+/* flex-basis se utiliza para especificar el tamaño inicial de un elemento hijo en un contenedor flexbox. Por defecto, todos los elementos flexbox tienen un flex-basis de auto, lo que significa que el tamaño inicial de un elemento se basa en su contenido. Puede establecer un valor específico para flex-basis, como 0, para que un elemento tenga un tamaño inicial de 0 en el contenedor. La propiedad flex-basis en CSS se utiliza para establecer el tamaño inicial de un elemento en un contenedor Flexbox antes de que se distribuya el espacio restante.*/
