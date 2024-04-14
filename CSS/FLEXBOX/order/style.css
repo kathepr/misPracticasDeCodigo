@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #c8c8c8;
+}
+
+div,body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+
+
+}
+
+
+
+.flex-item {
+    background-color: #911;
+    color:aliceblue;
+    font-size: 40px;
+    text-align: center;
+    direction: rtl;
+    width: 100px;
+    order: 3;
+
+
+
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+    order: 1;
+
+    /* order sirve para cambiar el orden de los elementos. Para eso se le asigna un valor numérico, el cual indica la posición en la que se quiere que se muestre el elemento.
+
+    De forma predeterminada, todos los elementos tienen un valor de 0. Es por eso, que en este caso el first-child se puestra de ultimo, ya que tiene un valor de 1 y los demas elementos tienen un valor de 0. */
+}
+
+.flex-item:last-child {
+    background-color: rgb(62, 14, 25);
+    order: 2;
+}
+
+/* OJO:
+order, solo cambia el orden visual de los elementos, no cambia el orden en el que se encuentran en el código HTML. 
+
+Si al order le añadimos un valor negativo (por ejemplo: -1), el elemento se mostrará un elemento adelante */
+
