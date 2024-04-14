@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div,body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    justify-content: space-evenly;
+
+    /* justify content sirve para alinear los elementos del contenedor en el eje principal. Se puede utilizar flex-start, flex-end, center, space-between, space-around o space-evenly.
+
+    space-between: Distribuye los elementos de manera que el primer elemento esté al principio del contenedor y el último al final, y el espacio restante se distribuye entre los elementos.
+    
+    space-around: Distribuye los elementos de manera que haya el mismo espacio entre los elementos y al principio y al final del contenedor. 
+
+    space-evenly: Distribuye los elementos de manera que haya el mismo espacio entre los elementos y al principio y al final del contenedor.
+
+    Por ejemplo: Imagina que estás creando una barra de navegación con varios enlaces. Quieres que estos enlaces estén distribuidos uniformemente a lo largo de la barra de navegación. Podrías usar justify-content para distribuir los enlaces uniformemente a lo largo del eje horizontal.
+    */
+
+
+
+
+    height:360px;
+    align-items: center;
+
+
+
+    /* align-items sirve para alinear los elementos del contenedor en el eje transversal. Se puede utilizar start, end, center, stretch. Esta propiedad se utiliza para alinear los elementos hijos a lo largo del eje transversal (vertical en un contenedor de flexión de fila, horizontal en un contenedor de flexión de columna).
+
+
+    stretch: Los elementos se estiran para ocupar todo el alto del contenedor.
+
+    center: Los elementos se alinean en el centro del contenedor.
+
+    start: Los elementos se alinean al principio del contenedor.
+
+    end: Los elementos se alinean al final del contenedor.
+    
+    baseline: Los elementos se alinean en la línea base del contenedor.
+
+
+
+    Por ejemplo: Supón que tienes una sección de tu página con una imagen y un bloque de texto uno al lado del otro. La imagen es más alta que el bloque de texto, pero quieres que el texto esté centrado verticalmente en relación con la imagen. Aquí es donde align-items resulta útil. Podrías usar align-items: center para centrar el texto verticalmente.
+
+    */
+
+
+
+    align-content: space-evenly;
+
+
+    /* align-content sirve para alinear las líneas de elementos en el contenedor en el eje transversal. Se puede utilizar flex-start, flex-end, center, space-between, space-around, stretch. Esta propiedad se utiliza para alinear las líneas de flexión o de cuadrícula cuando hay espacio extra en el eje transversal. Úsala cuando tienes un contenedor de flexión o de cuadrícula con múltiples líneas y quieres controlar su distribución a lo largo del eje transversal.
+
+
+
+    stretch: Las líneas de elementos se estiran para ocupar todo el alto del contenedor.
+
+    center: Las líneas de elementos se alinean en el centro del contenedor.
+
+    start: Las líneas de elementos se alinean al principio del contenedor.
+
+    end: Las líneas de elementos se alinean al final del contenedor.
+
+    space-between: Distribuye las líneas de elementos de manera que la primera línea esté al principio del contenedor y la última al final, y el espacio restante se distribuye entre las líneas.
+
+    space-around: Distribuye las líneas de elementos de manera que haya el mismo espacio entre las líneas y al principio y al final del contenedor. 
+
+
+
+    Por ejemplo:
+    Imagina que tienes un contenedor con varias filas de elementos. Cuando la ventana del navegador es grande, hay mucho espacio extra entre las filas. Quieres que este espacio se distribuya uniformemente entre las filas. Aquí es donde align-content resulta útil. Podrías usar align-content: space-around para distribuir el espacio extra uniformemente entre las filas.
+
+    */
+
+}
+
+
+
+.flex-item {
+    height: 60px;
+    width: 150px;
+    background-color: #911;
+    color:aliceblue;
+    font-size: 40px;
+    text-align: center;
+
+
+
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+}
+
+.flex-item:last-child {
+    background-color: rgb(62, 14, 25);
+}
+
+
+
