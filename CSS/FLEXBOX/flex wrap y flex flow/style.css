@@ -1,0 +1,49 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.flexbox {
+    display: flex;
+    /* display sirve para definir el tipo de caja que se va a utilizar para un elemento. En este caso, se utiliza flex para que el contenedor sea un contenedor flexible. */
+    
+    flex-wrap: wrap;
+    /* flex-wrap sirve para definir si los elementos del contenedor se van a acomodar en una sola línea o en varias líneas. Se puede utilizar nowrap, wrap o wrap-reverse. */
+
+    flex-direction: row;
+
+    flex-flow: row wrap;
+    /* flex-flow es una propiedad abreviada que combina flex-direction y flex-wrap. Se puede utilizar en lugar de escribir ambas propiedades por separado. */
+
+
+}
+
+
+.flex-item {
+    height: 60px;
+    width: 150px;
+    background-color: #911;
+    margin: 10px;
+    color:aliceblue;
+    font-size: 40px;
+    text-align: center;
+
+
+
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+}
+
+.flex-item:last-child {
+    background-color: rgb(62, 14, 25);
+}
+
+
+
+
+
+/* flex-flow es una propiedad abreviada que combina flex-direction y flex-wrap. Se puede utilizar en lugar de escribir ambas propiedades por separado. */ 
