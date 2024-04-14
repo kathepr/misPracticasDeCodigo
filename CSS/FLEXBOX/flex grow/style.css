@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #c8c8c8;
+}
+
+div,body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+
+
+}
+
+
+
+.flex-item {
+    background-color: #911;
+    color:aliceblue;
+    font-size: 40px;
+    text-align: center;
+    direction: rtl;
+    flex-grow: 1;
+ 
+    /* 
+    flex-grow se usa para especificar cuánto espacio adicional debe ocupar un elemento hijo en un contenedor flexbox. Por defecto, todos los elementos flexbox tienen un flex-grow de 0, lo que significa que no crecerán para ocupar espacio adicional en el contenedor. Puede establecer un valor específico para flex-grow, como 1, para que un elemento crezca y ocupe espacio adicional en el contenedor. 
+    */
+ 
+
+
+
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+    flex-grow: 3;
+
+
+
+}
+
+.flex-item:last-child {
+    background-color: rgb(62, 14, 25);
+    flex-grow: 4;
+ 
+}
+
+
+
+
+
+
