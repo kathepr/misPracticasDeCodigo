@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.flexbox {
+    display: flex;
+    /* display sirve para definir el tipo de caja que se va a utilizar para un elemento. En este caso, se utiliza flex para que el contenedor sea un contenedor flexible. */
+    flex-direction: row;
+    /* flex-direction sirve para definir la dirección en la que se van a acomodar los elementos del contenedor. Se puede utilizar row, row-reverse, column o column-reverse. */
+    direction: ltr;
+    /* direction sirve para definir la dirección de escritura del texto. Se puede utilizar ltr (left to right) o rtl (right to left). */
+}
+
+
+.flex-item {
+    height: 60px;
+    width: 150px;
+    background-color: #911;
+    margin: 10px;
+    color:aliceblue;
+    font-size: 40px;
+    text-align: center;
+
+    /* Si le añadimos padding a los elementos, estos dejan de ser flexibles, ya que el padding se suma al tamaño del elemento. Para solucionar esto, se puede utilizar box-sizing: border-box; en el contenedor. */
+
+
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+}
+
+.flex-item:last-child {
+    background-color: rgb(62, 14, 25);
+}
+
+/* 
+
+:first-child significa que el estilo se aplicará al primer elemento hijo de su contenedor.
+
+:last-child significa que el estilo se aplicará al último elemento hijo de su contenedor.
+
+
+
+:nth-child significa que el estilo se aplicará a los elementos que cumplan con la condición que se le pase como argumento. Es decir, si le pasamos 2n como argumento, se aplicará a los elementos pares.
+
+:nth-last-child() significa que el estilo se aplicará a los elementos que cumplan con la condición que se le pase como argumento, pero contando desde el último elemento. Es decir, si le pasamos 2 como argumento, se aplicará a los dos últimos elementos.
+
+:nth-last-of-type() es similar a :nth-last-child(), pero en lugar de contar todos los elementos, cuenta solo los elementos del mismo tipo. En CSS, "tipo" se refiere al tipo de elemento HTML. Por ejemplo, div, p, span, li, a, etc., son todos diferentes tipos de elementos.
+
+:nth-of-type() significa que el estilo se aplicará a los elementos que cumplan con la condición que se le pase como argumento, pero contando solo los elementos del mismo tipo. En CSS, "tipo" se refiere al tipo de elemento HTML. Por ejemplo, div, p, span, li, a, etc., son todos diferentes tipos de elementos.
+
+*/
+
