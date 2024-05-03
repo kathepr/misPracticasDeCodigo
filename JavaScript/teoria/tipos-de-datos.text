@@ -1,0 +1,37 @@
+TIPOS DE DATOS EN JAVASCRIPT
+
+1. Primitivos: Se accede directamente al valor
+
+    *string
+    *number
+    *boolean
+    *null
+    *undefined
+    *NaN
+
+
+    let a = 5;
+    let b = a; // b toma el valor de a
+    b = 10; // Modificamos b
+
+    console.log(a); // Esto imprimirá 5, porque 'a' no se ve afectado por el cambio en 'b'
+
+    console.log(b); // Esto imprimirá 10
+
+
+2. Compuestos: Se accede a la referencia del valor.
+
+    *object = {}
+    *array = []
+    *function () {}
+    *Class {}
+    *etc
+
+    let objeto1 = { nombre: "Juan" };
+    let objeto2 = objeto1; // objeto2 apunta al mismo objeto en memoria que objeto1
+
+    objeto2.nombre = "María"; // Modificamos el nombre a través de objeto2
+
+    console.log(objeto1.nombre); // Esto imprimirá 'María', porque ambos objetos apuntan al mismo objeto en memoria
+    
+    console.log(objeto2.nombre); // Esto también imprimirá 'María'

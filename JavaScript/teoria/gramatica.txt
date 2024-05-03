@@ -1,0 +1,59 @@
+GRAMATICA JAVASCRIPT:
+
+PARA:
+
+* Archivos:
+    Usar snake_case
+    ejm: mi_archivo_javascript.js 
+
+
+* Constantes:
+    Usar UPPER_CASE 
+
+    ejm: const UNA_CONSTANTE = "Soy una constante"
+
+    ejm: PI = 3.141592653589793
+
+* Clases:
+    Usar UpperCamelCase
+
+    ejm: 
+    class SerHumano{
+        constructor (nombre, genero){
+            this.nombre = nombre
+            this.genero = genero
+        }
+    }
+
+    ejm:
+    MiNombreEs (){
+        return "Mi nombre es ${this.nombre}"
+    }
+
+
+* Usa lowerCamelCase en:
+
+    -Objetos:
+        const unObjeto{
+            nombre: "Jonathan",
+            email: "jonmircha@gmail.com"
+        }
+
+    
+    -Primitivos:
+        let unaCadena = "Hola Mundo",
+        unNumero = 19,
+        unBoolean = true
+
+    
+    -Funciones:
+        function holaMundo (nombre) {
+            alert("Hola mundo ${nombre}")
+        }
+
+        holaMundo ("Jonathan")
+
+    -Instancias:
+        const ajax = new XMLHttpRequest(),
+        jon = new SerHUmano ("Jonathan", "Hombre")
+
