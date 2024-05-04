@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+
+
+<body>
+
+    <script>
+
+//Cadena de texto = Strings
+
+        let nombre = "Kathe";
+        let apellido = "PR";
+        let saludo = new String("Hola Mundo")
+        let lorem = "          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime expedita id laudantium non rem, aperiam distinctio ex veritatis blanditiis ducimus mollitia eius aliquam suscipit dolores consectetur laboriosam voluptate modi repellat?          "
+
+        console.log(nombre,apellido,saludo)
+
+
+
+
+
+//.length me ayuda a saber la cantidad de caracteres. Recuerda que el espacio en blanco también cuenta como un caracter.
+
+        console.log(nombre.length, apellido.length, saludo.length)
+
+
+
+
+
+//Para hacer que todo aparezca en mayuscula: toUpperCase()
+//Para hacer que todo aparezca en minuscula: toLowerCase()
+
+        console.log(nombre.toUpperCase(), apellido.toLowerCase())
+
+
+
+
+
+
+//Vamos a evaluar si dentro de la cadena lorem, se encuentra la palabra "amet"
+
+        console.log(lorem.includes("amet"), lorem.includes("hola"))
+
+//Me va a salir true, porque SI se encuentra "amet". Y luego imprime false porque NO se encuentra "hola"
+
+
+
+
+//trim, quita los espacios en blanco que tiene la cadena al inicio y al final
+        console.log(lorem)
+        console.log(lorem.trim())
+
+
+
+
+
+
+
+//CONCATENACIÓN EN CADENAS DE TEXTO: +
+
+        let nombre2 = "Andrea";
+        let apellido2 = "Lamprea";
+
+        let saludo2 = "Hola! Mi nombre es " + nombre2 + " " + apellido2 + ".";
+
+        console.log(saludo2)
+
+
+
+
+//INTERPOLACIÓN DE VARIABLES: Template String. Se empieza con ACENTO INVERTIDO ``
+//En la consola se ve igual que la concatenación.
+
+        let saludo3 =`Hola mi nombre es ${nombre} ${apellido}.`
+
+        console.log(saludo3)
+
+
+
+
+    </script>
+    
+</body>
+</html>

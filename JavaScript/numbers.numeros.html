@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers - Números</title>
+
+</head>
+
+
+<body>
+
+    <script>
+
+//NÚMEROS - NUMBERS: No hay direnciación entre enteros, flotantes, etc. Todos se agrupan en números. 
+
+        let a = 2;
+        let b = new Number(1);
+        let c = 7.19;
+        let d = "5.6";
+
+        console.log(a,b);
+        console.log(typeof c, typeof d); //Nos ayuda a ver que tipo de variable es: string, number, etc...
+
+
+
+
+
+//toFixed() te ayuda a redondear un número decimal. Entre parentesis se escribe el número de decimales que se desea mostrar. 
+
+        console.log(c.toFixed(1))
+
+
+//parseInt() devuelve la parte entera
+
+        console.log(parseInt(c));
+
+
+
+//Si quiero que haya una suma entre la variable c + d; primero necesito convertir la cadena a número. Para eso usamos parseFloat(), no solo muestra los decimales, sino que también muestra el entero
+
+        console.log(c + parseFloat(d))
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
