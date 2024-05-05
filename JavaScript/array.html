@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arrays</title>
+</head>
+
+<body>
+
+    <script>
+
+//Hay formas diferentes de declarar arreglos. Es posible usar const o let sin problema.
+
+//Un arreglo es una colección de elementos
+
+        const a = [];
+        const b = [1, true, "Hola", ["A", "B", "C"], [1,2,3]];
+
+        console.log(a);
+        console.log(b);
+
+//Si quiero acceder solo a la Palabra "Hola", tengo que remitirme a su ubicación entre corchetes
+
+        console.log(b[2]);
+
+//Si quiero imprimir solamente la letra C:
+        console.log(b[3][2]);
+
+//Si quiero imprimir el 1 del arreglo que está dentro de b
+
+        console.log(b[4][0]);
+
+
+
+
+
+
+
+//OTRA MANERA DE CREAR ARREGLOS:
+
+        const c = Array.of("X", "Y", "Z", 9, 8, 7);
+        console.log(c);
+
+
+//Aquí estoy diciendo que necesito un array de 100 posiciones. Y puedo llenar las posiciones con fill, en este caso, las llené de true.
+        const d = Array(100).fill(true);
+        console.log(d)
+
+
+
+//ALGUNOS MÉTODOS DE LOS ARRAYS:
+
+        const colores = ["rojo", "verde", "azul"];
+        console.log(colores);
+
+        //Añado un nuevo elemento al array
+        colores.push("rosado");
+        console.log(colores);
+
+        //Quitar el ultimo elemento
+        colores.pop();
+        console.log(colores);
+
+
+        //EL metodo forEach ejecuta la función indicada una vez por cada elemento del array.
+        colores.forEach(function(elemento,index){
+            console.log(`<li id="${index}">${elemento}</li>`)
+        })
+
+
+    </script>
+    
+</body>
+</html>
