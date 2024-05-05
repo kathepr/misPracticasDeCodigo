@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Funciones</title>
+</head>
+
+<body>
+    
+    <h1> DATOS COMPUESTOS: </h1>
+    <p>FUNCIONES</p>
+
+
+    <script>
+
+//DECLARAR UNA FUNCIÓN:
+
+        function esteEsElNombreDeLaFuncion(){
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+        };
+
+        
+        //Funcion que retorna valor
+        function unaFuncionQueDevuelveValor(){
+            console.log("Uno");
+            console.log("Dos");
+            console.log("Tres");
+            return "La función ha retornado una cadena de texto" //Para que retorne un valor, hay que colocar return.
+        };
+
+
+        //Funcion que reserve valores
+        //En los valores puedo añadir al frente de cada uno, algo que represente el tipo de variable al que pertenecen, por ejemplo "sdbdbe" y 5 (para darle a entender que el primero recibe strings y el segundo numeros)
+        function saludar(nombre = "palabra", edad = 0){
+            console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`)
+        };
+
+
+
+        //Funciones Declaradas VS Funciones Expresadas
+
+        funcionDeclarada();
+
+        function funcionDeclarada (){
+            console.log("Esto es una función declarada y puede invocarse en cualquier parte del codigo, incluso antes de que la funcion haya sido declarada")
+        };
+
+        funcionDeclarada();
+
+
+
+
+        
+        const funcionExpresada = function(){
+            console.log("Esto es una función expresada, es decir, una función que se ha asignado como valor a una variable, si invocamos esta función antes de su definición JS nos GENERARÁ UN ERROR")
+        };
+        funcionExpresada();
+
+        
+
+
+
+//INVOCACIÓN DE FUNCIONES - EJECUCIÓN DE LA FUNCIÓN:
+
+        esteEsElNombreDeLaFuncion(); //Es muy importante colocar los parentesis, para que se ejecute la función.
+
+
+        //invocar funcion que retorna valor:
+        let valorDeFuncion = unaFuncionQueDevuelveValor();
+        console.log(valorDeFuncion)
+
+        //Invocar funcion que recibe valores:
+        saludar("Tabby", 7)
+
+        
+
+    </script>
+
+</body>
+</html>
