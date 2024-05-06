@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos en JavaScript</title>
+</head>
+
+<body>
+    
+
+    <script>
+
+        const b ={};
+        console.log(b);
+
+//Un objeto es una colección de llaves y valores.
+
+        const kathe = {
+            nombre: "Kathe",
+            apellido: "PR",
+            edad: 29,
+            pasatiempos: ["Crochet", "Leer", "Nadar", "Aprender Acuarela", "Cine", "Aprender"],
+            casada: false,
+            contacto: {
+                email: "bla@gmail.com",
+                twitter: "@bla",
+                celular: "1230"
+            },
+            saludar:function(){
+                console.log("Hola :)")
+            },
+
+            //Si queremos acceder a una propiedad dentro del mismo objeto: Podemos usar this. 
+            decirMiNombre:function(){
+                console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años. Y me puedes seguir en twitter como ${this.contacto.twitter}`)
+            }
+        };
+
+        console.log(kathe);
+
+//¿Como accedemos a los valores de un objeto?
+
+//Dentro de los objetos, las variables se llaman: ATRIBUTOS / PROPIEDADES
+//A las funciones se les llama: METODOS.
+
+        
+    // Podemos acceder de esta manera:
+    console.log(kathe["nombre"]);
+    // O de esta manera (con un punto):
+    console.log(kathe.apellido);
+    console.log(kathe.pasatiempos);
+
+    // Si quiero acceder a un pasatiempo en especifico, me remito a su posición.
+    console.log(kathe.pasatiempos[1])
+    
+    
+    //Como contacto es un objeto, si deseo acceder a uno de sus valores, lo puedo hacer a traves de otro punto
+    console.log(kathe.contacto.email);
+
+    //Para acceder al valor de la funcion (un metodo).
+    kathe.saludar();
+    kathe.decirMiNombre();
+
+
+
+    //Algunos metodos:
+    //Para acceder a las llaves:
+    console.log(Object.keys(kathe));
+    //Para acceder a los valores:
+    console.log(Object.values(kathe));
+    //Si quiero saber si un objeto tiene una propiedad:
+    console.log(kathe.hasOwnProperty("nombre"));
+    console.log(kathe.hasOwnProperty("nacimiento"));
+
+
+
+
+    </script>
+
+
+</body>
+</html>
