@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Operadores</title>
+
+</head>
+
+<body>
+
+    <script>
+// TIPOS DE OPERADORES: 
+
+        // Operadores Aritmeticos: 
+
+        let a = 5 + 5 - (2 * 3); 
+        let division = 5 / 2;
+        let modulo = 5 % 2;
+
+        console.log(a);
+        console.log(division);
+        console.log(modulo);
+
+        // Operadores Relacionales: 
+
+        console.log(8>9);
+        console.log(9>8);
+        console.log(8 >= 9);
+        console.log(9 >= 8);
+        console.log(7 < 7);
+        console.log(7 <= 7);
+
+
+            // = es asignación de variable
+            // == es comparación de valores
+            // === es comparación de tipo de dato y valor; es recomendable usar siempre esta comparación.
+
+        console.log(7==7);
+        console.log("7"==7);
+        console.log("7"===7);
+
+
+        // Operadores Incremento y Decremento
+
+        let i = 1;
+        i=i+2;
+        console.log(i)
+
+            // Lo anterior se puede expresar como:
+        let b = 1;
+        b+=2;
+        console.log(b)
+
+
+        let c = 1;
+        c-=2;
+        console.log(c);
+
+        let d = 1;
+        d*=2;
+        console.log(d)
+
+            // Operador Unario: 
+
+        let e=4;
+        e++; //(Se le incrementa 1)
+        e--; //(Se le decrementa 1)
+
+        console.log(e)
+
+
+
+
+
+
+        
+        //Operadores lógicos: ! (Not), || (Or), && (And)
+
+        console.log(!true) //Era verdadero pero lo vuelve falso (o visceversa)
+        console.log(!false)
+
+
+
+        console.log((9 === 9) || ("9" === 9)); //Con que al menos una de las condiciones se cumpla, va a ser verdadero.
+
+        console.log((9 === 9) && ("9" === 9)); //Cuando necesitamos que TODAS nuestras condiciones se cumplan. Si una de estas no se cumple, arroja falso.
+
+
+
+
+
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>
