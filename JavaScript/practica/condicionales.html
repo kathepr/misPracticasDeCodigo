@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales JavaScript</title>
+</head>
+
+<body>
+    
+    <script>
+
+// if -else
+
+        let edad = 17;
+        if (edad > 17){
+            console.log("Eres mayor de edad");
+        }
+        else{
+            console.log("Eres menor de edad");
+        }
+
+
+
+
+        if (edad >= 18){
+            console.log("Eres mayor de edad");
+        }
+        else{
+            console.log("Eres menor de edad");
+        }
+
+
+
+
+        if (edad < 18){
+            console.log("Eres menor de edad");
+        }
+        else{
+            console.log("Eres mayor de edad");
+        }
+
+
+
+        if (edad <= 17){
+            console.log("Eres menor de edad");
+        }
+        else{
+            console.log("Eres mayor de edad");
+        }
+
+
+
+
+
+//CONDICIONALES ANIDADOS
+// if - else if - else
+// Dejame dormir 0hr - 5hr
+// Buenos dias 6hr - 11hr
+// Buenas tardes 12hr - 18hr
+// Buenas noches 19 hrs - 23 hrs
+
+        let hora = 5;
+        if (hora>=0 && hora <=5){
+            console.log("Dejame dormir");
+        }
+        else if (hora>=6 && hora<=11){
+            console.log("Buenos dias");
+        }
+        else if (hora>=12 && hora<=18){
+            console.log("Buenas tardes");
+        }
+        else{
+            console.log("Buenas noches")
+        }
+
+
+// Simplificacion del if-else en una sola linea de codigo
+// Operador ternario (condicion)?verdadero:falsa
+        let eresMayor =(edad >= 18)? "Eres mayor de edad" : "Eres menor de edad";
+        console.log(eresMayor);
+
+//Otra forma de escribirlo
+        let eresMayor2 =(edad >= 18)
+        ?"Eres mayor de edad"
+        :"Eres menor de edad";
+        console.log(eresMayor2);
+
+
+
+
+
+
+//switch-case : Cuando tenemos distintos valores para una misma variable
+
+// domingo-0
+// lunes-1
+// martes-2
+// miercoles-3
+// jueves-4
+// viernes-5
+// sabado-6
+
+        let dia = 2;
+        switch(dia){
+            case 0:
+                console.log("Domingo");
+                break;
+            case 1:
+                console.log("Lunes");
+                break;
+            case 2:
+                console.log("Martes");
+                break;
+            case 3:
+                console.log("Miercoles");
+                break;
+            case 4:
+                console.log("Jueves");
+                break;
+            case 5:
+                console.log("Viernes");
+                break;
+            case 6:
+                console.log("Sabado");
+                break;
+            default:
+                console.log("Ese día no existe");
+                break;
+
+        }
+
+    // La declaración switch se utiliza para ejecutar un bloque de código entre múltiples opciones basándose en el valor de una expresión dada. 
+    
+    //Puede ser una alternativa más limpia a usar múltiples declaraciones if...else if cuando necesitas comparar un único valor con múltiples posibles coincidencias.
+
+    //Si no encuentra ninguna coincidencia, se ejecuta el bloque de código default.
+
+
+    </script>
+
+</body>
+</html>
