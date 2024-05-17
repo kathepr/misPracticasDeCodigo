@@ -139,3 +139,38 @@ GITHUB:
 * git switch --detach origin/master: me crea una rama temporal para visualizar los cambios.
 
 * Si decido que los cambios me sirven, volvemos a la rama master: git switch master y podemos hacer git pull y solucionar conflictos
+
+
+
+5. MIGRAR REPOSITORIO LOCAL AL REMOTO
+* git init
+* relaciona repo local con el remoto: git remote add origin <url-del-repositorio-remoto>
+* subir contenido a repo remoto: git push -u origin main
+
+
+
+6. FORKS 
+* Copia de un repositorio existente en el que se puede trabajar de forma independiente. Un fork permite a un desarrollador o usuario copiar un repositorio de otro usuario o de una organización a su propia cuenta de usuario, lo que permite trabajar de forma aislada en el proyecto sin afectar al repositorio original.
+
+* Se hace en github y una vez tengas el repo en tu cuenta de github, lo clonas para trabajarlo localmente. 
+
+
+
+7. PULL REQUESTS:
+Permite a un desarrollador solicitar que los cambios que ha realizado en su copia de un repositorio (usualmente en un fork) se integren en el repositorio original. Es una herramienta esencial para la colaboración y contribución en proyectos de código abierto y equipos de desarrollo distribuidos.
+
+* Se hace en github.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
