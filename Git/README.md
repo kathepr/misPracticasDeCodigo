@@ -98,6 +98,17 @@ MERGE FUSIONAR RAMAS:
 
 
 
+RESOLVER CONFLICTOS ENTRE RAMAS:
+
+
+32. En view ingresa a Source Control o puedes oprimir: Ctrol Shift G
+
+33. Abrir el merge editor:
+
+Para abrir el merge editor en Visual Studio Code, puedes hacer lo siguiente:
+Haz clic en el botón Accept (Aceptar) en el lado izquierdo de la barra de título del editor. Este botón aparece cuando abres un archivo con conflictos.
+Alternativamente, puedes hacer clic derecho en el archivo en el panel de control de Git y seleccionar Open Changes.
+
 
 
 RECUPERAR CAMBIOS PERDIDOS O REVERTIR ESTADO ANTERIOR DEL REPOSITORIO:
@@ -106,3 +117,25 @@ RECUPERAR CAMBIOS PERDIDOS O REVERTIR ESTADO ANTERIOR DEL REPOSITORIO:
 
 * Luego se puede usar un git reset --hard idReferenciaCommit
 
+
+
+
+
+
+
+GITHUB:
+
+1. Clonar un repositorio:
+* git clone URLrepositorio (HTTPS)
+
+2. Subir cambios al servidor remoto:
+* git push 
+
+3. Bajar los cambios que se encuentran en el servidor y fusionarlos directamente a la rama local:
+* git pull
+
+4. Bajar los cambios que se encuentran en el servidor pero NO LOS FUSIONA localmente:
+* git fetch
+* git switch --detach origin/master: me crea una rama temporal para visualizar los cambios.
+
+* Si decido que los cambios me sirven, volvemos a la rama master: git switch master y podemos hacer git pull y solucionar conflictos
