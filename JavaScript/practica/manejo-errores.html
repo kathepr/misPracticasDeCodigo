@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Errores en JavaScript</title>
+</head>
+
+<body>
+
+    <script>
+
+        try{
+            console.log("En el try se agrega el código que se evalua");
+
+            noExiste; //Error: Variable no existente
+
+            console.log("Si el bloque encuentra un error, no va a seguir mostrando las siguientes lineas de código, sino que salta directamente al catch. ")
+
+        }catch(error){
+            console.log("El catch captura cualquier error que surja en el try");
+
+            console.log(error);
+
+        }finally{
+            console.log("El finally siempre se ejecuta al final de un bloque try-catch");
+        } //No es necesario poner siempre el finally, depende de lo que estes buscando
+
+
+
+
+        //EJEMPLO:
+
+        try{
+            let number="y";
+            if(isNaN(number)){
+                throw new Error("La cagaste baby, el caracter introducido NO es un número");
+            }
+            console.log(number*number);
+        }catch(error){
+            console.log(`Se produjo el siguiente error ${error}`);
+        }
+
+    </script>
+
+</body>
+</html>
