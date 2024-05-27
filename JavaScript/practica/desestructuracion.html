@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desestructuración</title>
+</head>
+
+<body>
+
+    <script>
+        
+        const numeros = [1,2,3];
+
+
+        //Sin desestructuración: 
+        let uno = numeros[0],
+        dos = numeros[1],
+        tres = numeros[2];
+
+        console.log(uno,dos,tres);
+
+
+        //Con desestructuración: 
+        const [one, two, three] = numeros;
+        console.log(one,two,three);
+
+        let persona = {
+            nombre: "Kathe",
+            apellido: "Pimentel",
+            edad: 30
+        }
+
+        let {nombre, apellido, edad} = persona;
+        console.log(nombre, apellido, edad);
+
+
+
+        //La desestructuración:
+        //Permite extraer valores de arreglos o propiedades de objetos en variables distintas de una manera concisa
+
+        
+    </script>
+    
+</body>
+
+</html>
