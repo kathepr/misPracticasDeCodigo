@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametros REST y Operador Spread</title>
+</head>
+
+<body>
+
+    <script>
+
+
+    //Parametros REST: 
+    // La sintaxis de los parámetros REST consiste en usar tres puntos (...) seguido por el nombre del parámetro
+
+        function sumar(a,b,...c){
+            let resultado = a+b;
+
+            c.forEach(function(n){
+                resultado += n
+            });
+
+            return resultado;
+        }
+
+        console.log(sumar(1,2));
+        console.log(sumar(1,2,3));
+        console.log(sumar(1,2,3,4));
+        console.log(sumar(1,2,3,4,5));
+        console.log(sumar(1,2,3,4,5,6));
+        
+
+
+
+
+        //Parametros SPREAD:
+        //Permite expandir elementos de un array o propiedades de un objeto en lugares donde se esperan múltiples elementos o argumentos. La sintaxis del operador spread también utiliza tres puntos (...)
+
+        const array1= [1,2,3,4,5];
+        array2= [6,7,8,9,0];
+        console.log(array1, array2);
+
+        const array3 = [...array1, ...array2]; //Se puede usar spread para expandir un array 
+
+        console.log(array3);
+
+    </script>
+    
+</body>
+
+</html>
