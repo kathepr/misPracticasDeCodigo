@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Literales</title>
+</head>
+
+<body>
+    
+    <script>
+        let nombre = "Tabby",
+        edad = 7;
+
+        const gata = {
+            nombre:nombre,
+            edad:edad,
+            maullar:function(){
+                console.log("miau miau")
+            }
+        }
+
+        console.log(gata)
+        gata.maullar()
+
+
+
+
+
+
+        const cat = {
+            nombre,
+            edad,
+            raza: "Mestiza",
+            maullar(){
+                console.log("miau miau miau miau")
+            }
+        }
+        console.log(cat)
+        cat.maullar();
+
+        
+
+    </script>
+
+</body>
+
+</html>
