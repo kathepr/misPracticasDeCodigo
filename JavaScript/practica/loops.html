@@ -18,8 +18,6 @@
         }
 
 
-
-
         // do-while : el bloque de código se ejecuta al menos una vez, independientemente de si la condición es verdadera o falsa
         do {
             console.log(contador)
@@ -28,9 +26,51 @@
 
 
 
-        // for (inicialización de la variable, condicion, decremento/incremento) {
+
+
+
+        // for (se declara la variable, condicion, decremento/incremento) {
         //     sentencias - lineas de código
         // }
+
+        for (let i=0; i<10; i++){
+            console.log(i);
+        }
+
+        let numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+        for(let i=0; i<numeros.length;i++){
+            console.log(numeros[i]);
+        }
+
+
+
+
+
+        //Variantes del for
+        //for in : Se utiliza principalmente para iterar sobre las propiedades de los objetos
+
+        const kathe = {
+            nombre: "Kathe",
+            apellido: "Pimentel",
+            edad: 30
+        }
+
+        for (const propiedad in kathe){
+            console.log(propiedad); //Solo se muestra la llave
+            console.log(`Key: ${propiedad}, Value: ${kathe[propiedad]}`); //Se muestra la llave y su valor
+        }
+
+
+        //for of :  Iterar sobre los valores de objetos iterables (como Arrays, Map, Set, String, etc.), cualquier elemento
+        for(const elemento of numeros){
+            console.log(elemento);
+        }
+
+
+        let cadena = "Hola Mundo";
+        for(const caracter of cadena){
+            console.log(caracter)
+        }
 
 
     </script>
