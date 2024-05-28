@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+        1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10.
+        */
+
+
+        //STRING
+        let cadena = "Hola Mundo"
+        numeroCadena = cadena.length
+        console.log(numeroCadena)
+
+
+        //ARRAY
+        let cadenaArray = ["Hola", "Mundo"]
+        numeroCadenaArray = cadenaArray[1].length
+        console.log(numeroCadenaArray)
+
+
+
+        //OBJETOS
+        let datos = [
+            {nombre: "Kathe"},
+            {apellido: "PR"}
+        ]
+
+        longitudDatos = datos[0].nombre.length
+        console.log(`El nombre ${datos[0].nombre} tiene ${longitudDatos} caracteres`)
+        longitudDatos2 = datos[1].apellido.length
+        console.log(`El apellido ${datos[1].apellido} tiene ${longitudDatos2} caracteres`)
+
+
+    </script>
+    
+</body>
+</html>
