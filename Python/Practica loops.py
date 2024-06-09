@@ -23,7 +23,7 @@ for number in range(1,10):
 
 print("\nFor con Range y número extra\n")
 
-for number2 in range(2, 11, 2): #Para que se incremente de dos en dos, debo poner un tercer número, en este caso, dos
+for number2 in range(2, 11, 2): #Para que se vaya de dos en dos, debo poner un tercer número, en este caso, dos
     print(number2)
 
 print("\nSuma de numeros del 1 al 100\n")
