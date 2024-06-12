@@ -46,7 +46,7 @@
 
 
 
-//FETCH
+//GET
 // const url = `https://jsonplaceholder.typicode.com/posts/`;
 // const options = {
 // 	method: 'GET',
@@ -54,7 +54,10 @@
 
 // const response = await fetch(url, options);
 // const data = await response.json();
-// console.table(response['body'])
+// console.table(data)
+// data.forEach(element => {
+//     console.log(element['tipo_tramite'])
+// });
 
 
 
