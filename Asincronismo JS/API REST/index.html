@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./api-rest.js" defer></script>
+
+    <title>Api Rest - The Cats</title>
+</head>
+<body>
+
+
+    <!-- Lista de APIS: https://github.com/public-apis/public-apis -->
+
+    <h1>Gatitos App</h1>
+
+    <section id="randomMichis" class="randomMichis">
+        <h2>Gatitos Aleatorios</h2>
+
+        <span id="error"></span>
+
+        <article>
+
+            <img id="img1" class="img" alt="Gatos Aleatorios">
+
+            <button id="botonFavourite1">
+                Guardar en Favoritos
+            </button>
+
+        </article>
+
+        <article>
+
+            <img id="img2" class="img" alt="Gatos Aleatorios">
+
+            <button id="botonFavourite2" onclick="saveFavouriteCats()">
+                
+                Guardar en Favoritos
+            </button>
+
+        </article>
+
+
+
+        <button onclick="loadRandomCats()">Recargar</button>
+        
+    <section>
+
+    
+    <section id="favouriteMichis" class="favoriteMichis">    
+        <h2>Gatitos Favoritos</h2>
+            
+        <article>
+            <img id="img" class="img" alt="Gatos Aleatorios">
+            <button>Sacar al Michi Favoritos</button>
+        </article>
+    </section>
+    
+    
+
+</body>
+</html>
