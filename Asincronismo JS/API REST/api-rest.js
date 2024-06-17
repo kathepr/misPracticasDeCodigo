@@ -14,6 +14,8 @@ const API_URL_FAVOURITE= "https://api.thecatapi.com/v1/favourites"
 
 const API_URL_DELETE = (id) => `https://api.thecatapi.com/v1/favourites/${id}`
 
+const API_URL_UPLOAD = "https://api.thecatapi.com/v1/images/upload"
+
 
 
 
@@ -61,6 +63,54 @@ async function loadRandomCats(){
 }
 
 window.onload = loadRandomCats()
+
+
+
+
+/*
+
+*****************************
+SECCIÓN SUBIR FOTO DE GATITO
+*****************************
+
+*/
+
+async function uploadMichiPhoto() {
+    const form = document.getElementById("uploadingForm");
+    const formData = new FormData(form);
+    const file = formData.get("file"); // Obtener el archivo del form data
+
+    console.log(file); // Debug: Aqui puedo revisar si el archivo está siendo recibido correctamente
+
+    if (!file) {
+        console.error('El archivo no ha sido seleccionado');
+    }
+
+    try {
+        const res = await fetch(API_URL_UPLOAD, {
+            method: "POST",
+            headers: {
+                'x-api-key': 'live_8YKVJsVer7wdPfMfgk8nUX9MAn3KDydecePacVT6QJTXe1P10AkXbiddPqf9qbsN'
+            },
+            body: formData,
+        });
+
+        const data = await res.json(); //Se convierte la data a JSON
+
+        if (res.status != 201) {
+            spanError.innerHTML = "Hubo un error: " + res.status;
+     
+        } else {
+            console.log("Foto del gatito subida satisfactoriamente");
+            console.log({ data });
+            console.log(data.url);
+            saveFavouriteCats(data.id); //La guardo en mis favoritos
+            loadFavouriteCats();
+        }
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
 
 
 
