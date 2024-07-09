@@ -100,5 +100,69 @@ console.log(usuario3.fullName())
 
 
 
+// *******************************************************
+
+function Person(){
+    this.name = "",
+    this.lastname = ""
+}
+
+//Es muy importante colocar new, para que JavaScript entienda que hablamos de OBJETOS.
+
+const person = new Person()
+console.log(person)
 
 
+
+// *******************************************************
+
+
+//Constructores de JAVASCRIPT
+
+const number = new Object(6)
+console.log(number)
+
+
+
+
+
+
+
+// *******************************************************
+
+
+//Prototipos
+
+function Pet(name, age){
+    this.name = name,
+    this.age = age,
+    this. displayInfo = function(){
+        return `${this.name} ${this.age}` 
+    }
+}
+
+const tabby = new Pet("Tabby", 7)
+tabby.name = "Gatalina" //También es posible cambiar la propiedad
+const tommy = new Pet("Tommy", 5)
+
+
+//PROTOTIPO
+Pet.prototype.greet = function(){
+    return `Hello I am ${this.name}`
+} //Le añadí un nuevo metodo al constructor Pet
+
+
+//Ahora todos tienen el saludo greet
+console.log(tommy.greet())
+console.log(tabby.greet())
+
+
+
+
+//ejemplo 2 prototipo
+const s = new String("hello people")
+
+String.prototype.concaTest = function() {
+    return this + "test"
+}
+console.log(s.concaTest())
