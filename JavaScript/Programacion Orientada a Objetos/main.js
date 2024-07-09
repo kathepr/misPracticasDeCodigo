@@ -166,3 +166,45 @@ String.prototype.concaTest = function() {
     return this + "test"
 }
 console.log(s.concaTest())
+
+
+
+
+
+
+
+
+
+
+// *******************************************************
+
+
+//Class: Las clases son una plantilla que define un tipo de objeto. Puede contener metodos (funciones) y propiedades (valores)
+
+//Esto es lo mismo, son dos formas distintas de escribirlo.
+
+function Pasatiempo(){
+    this.name = ""
+    this.years = 0
+}
+
+
+
+class Hobbie {
+    constructor(name, years){
+        this.name = name,
+        this.years = years
+    } 
+    greet(){
+        return `He practicado ${this.name} por ${this.years} años`
+    }
+}
+//El constructor devuelve un objeto nuevo y tiene las mismas propiedades del constructor que ya habiamos visto, es solo que este se escribe de forma distinta. 
+
+const acuarela = new Hobbie("acuarela", 2 )
+const crochet = new Hobbie("crochet", 3 )
+
+console.log(acuarela)
+console.log(acuarela.greet())
+console.log(crochet)
+console.log(crochet.greet())
