@@ -208,3 +208,284 @@ console.log(acuarela)
 console.log(acuarela.greet())
 console.log(crochet)
 console.log(crochet.greet())
+
+
+
+
+
+
+
+
+//**************************************************
+// POO: Busca crear código modular y reutilizable. A¿Utiliza la abstracción.
+
+//PRINCIPIOS: 
+
+//ASOCIACIÓN: Capacidad de los objetos de referir a otros objetos.
+class Person2 {
+    constructor(name, lastname){
+        this.name = name,
+        this.lastname = lastname
+    } 
+}
+
+//La asociación sugiere que estos dos objetos pueden relacionarse. Sin embargo, si no hay asociación, pueden seguir funcionando de manera independiente
+const john = new Person2("John", "Ray")
+const maria = new Person2("Maria", "Perez")
+
+maria.parent = john; //Aqui le añado una relación a través de una propiedad.
+console.log(maria)
+console.log(john)
+
+
+
+
+
+
+//AGREGACIÓN: Capacidad de referir uno o más objetos independientes. Algunos objetos pueden tener un rol "mayor" que otros, a este se le llama "Aggregate" (es el objeto que puede contener a otros) y los objetos que estan dentro se conocen como "Componentes"
+
+const company = {
+    name: "Kath Tech",
+    employees: []
+}
+
+const sara = new Person2("Sara", "Ray")
+const luisa = new Person2("Luisa", "Perez")
+
+company.employees.push(sara) // Se usa PUSH para añadir
+company.employees.push(luisa)
+
+console.log(company)
+
+
+
+
+
+
+
+
+
+
+
+
+//COMPOSICIÓN: Capacidad de referir uno o más objetos dependientes.
+const user2 = {
+    name: "Ryan",
+    lastname: "Ray",
+    address: {
+        street: "dreamer street",
+        city: "Quebec",
+        country: "Canada"
+    }
+}
+
+//Address, no es un objeto independiente. Si yo lo sacara de user2, no tendría sentido ya que está fuertemente relacionado con el objeto que lo contiene. 
+
+
+
+
+
+
+
+//ENCAPSULACIÓN: Capacidad de concentrar datos en una sola entidad ocultando detalles internos. Simplifica el uso del objeto.
+
+
+//Creación de constructor
+function Company(name){
+    let employees = [] //esto es una variable dentro del objeto, que se asocia, gracias a los metodos que se muestran a continuación.
+    this.name = name
+
+    this.getEmployees = function(){
+        return employees
+    }//esto es un metodo
+
+    this.addEmployee = function(employee){
+        employees.push(employee)
+    }//esto es un metodo
+}
+company2.addEmployee({name: "Pepa"})
+const company2 = new Company("Kathe's Tech")
+console.log(company2)
+console.log(company2.getEmployees())
+
+//Gracias  a esto he podido acceder a un objeto que está dentro del constructor y alterarlo.
+
+
+
+
+
+
+
+
+
+
+
+//HERENCIA: Mecanismo en el que un objeto puede adquirir las caracteristicas de uno o mas objetos.
+function Person3(){
+    this.name = "",
+    this.lastname = ""
+}
+
+function Programmer(){
+    // this.name = "",
+    // this.lastname = "",    parano repetir TODAS las propiedades, podemos hacer que las HEREDE.
+    this.language = ""
+}
+
+//PARA HACER UNA HERENCIA se usa prototype.
+Programmer.prototype = new Person3() //programmer, hereda propiedades de Person2
+
+
+// Ahora se puede crear instancias de Programmer que heredan las propiedades de Person3.
+let programmer = new Programmer();
+programmer.name = "John";
+programmer.lastname = "Doe";
+programmer.language = "JavaScript";
+
+console.log(programmer.name);      // John
+console.log(programmer.lastname);  // Doe
+console.log(programmer.language);  // JavaScript
+
+
+
+
+//--------------------EJEMPLO 2---------------------------
+// Definición de la clase Person5
+class Person5 {
+    constructor(name, lastname) {
+        this.name = name;
+        this.lastname = lastname;
+    }
+}
+
+// Definición de la clase Programmer1 que hereda de Person5
+class Programmer1 extends Person5 {
+    constructor(name, lastname, language) {
+        super(name, lastname); // Llama al constructor de Person5
+        this.language = language; // Define la propiedad específica de Programmer1
+    }
+}
+
+// Creación de una instancia de Person5
+const personita = new Person5("Sofia", "Rivera");
+console.log(personita); // Output: Person5 { name: 'Sofia', lastname: 'Rivera' }
+
+// Creación de una instancia de Programmer1
+const programmer1 = new Programmer1("Katheryn", "Pimentel", "Python");
+console.log(programmer1); // Output: Programmer1 { name: 'Katheryn', lastname: 'Pimentel', language: 'Python' }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//POLIMORFISMO: Capacidad de procesar objetos con distintos tipos de datos y estructuras. Capacidad de las funciones para manejar diferentes tipos de datos sin necesidad de modificar su definición.
+
+function countItems (x){
+    return x.toString().length //Gracias a la conversión a cadena con toString(), la función puede procesar tanto cadenas de texto como números. Esto demuestra polimorfismo porque la misma función puede manejar y procesar diferentes tipos de datos (cadenas y números) de manera adecuada.
+}
+
+console.log(countItems("Hola"))
+console.log(countItems(500))
+
+
+function suma(x=0, y=0, z=0){
+    return x+y+z
+}
+//Cualquier argumento no proporcionado se establece por defecto a 0 gracias a los valores predeterminados. Esto permite que la función sea flexible y pueda manejar diferentes cantidades de argumentos sin problemas:
+console.log(suma(10,20))
+
+
+
+
+
+
+//POLIMORFISMO PARAMETRICO: permite que las funciones o los datos sean genéricos, es decir, pueden operar con cualquier tipo de dato sin depender de un tipo específico
+
+// Función genérica que simplemente retorna el valor que se le pasa
+function identity(value) {
+    return value;
+}
+
+console.log(identity(42)); // Salida: 42
+console.log(identity("Hola")); // Salida: Hola
+console.log(identity([1, 2, 3])); // Salida: [1, 2, 3]
+console.log(identity({ a: 1, b: 2 })); // Salida: { a: 1, b: 2 }
+
+//En este ejemplo, la función identity toma un argumento value de cualquier tipo y lo retorna sin modificarlo. Esta función es "paramétricamente polimórfica" porque puede aceptar cualquier tipo de dato sin estar atada a un tipo específico.
+
+
+
+//-----------------EJEMPLO 2------------------
+
+function Stack(){
+    this.items = []
+    this.push = function(item){
+        this.items.push(item)
+    }
+}
+
+const stack = new Stack()
+stack.push("lalala")
+const stack2 = new Stack()
+stack2.push(1000)
+
+console.log(stack)
+console.log(stack2)
+
+
+
+
+
+//POLIMORFISMO POR SUBTIPO: permite que una función o un método opere sobre objetos de diferentes tipos, siempre que estos tipos deriven de un tipo base común
+
+
+
+// Clase base
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+
+    speak() {
+        console.log(`${this.name} hace un sonido.`);
+    }
+}
+
+// Clase derivada
+class Dog extends Animal {
+    speak() {
+        console.log(`${this.name} ladra.`);
+    }
+}
+
+// Otra clase derivada
+class Cat extends Animal {
+    speak() {
+        console.log(`${this.name} maúlla.`);
+    }
+}
+
+// Función que demuestra el polimorfismo por subtipo
+function makeAnimalSpeak(animal) {
+    animal.speak();
+}
+
+// Crear instancias de las clases derivadas
+const dog = new Dog('Rex');
+const cat = new Cat('Whiskers');
+
+// Llamar a la función con diferentes subtipos
+makeAnimalSpeak(dog); // Salida: Rex ladra.
+makeAnimalSpeak(cat); // Salida: Whiskers maúlla.
