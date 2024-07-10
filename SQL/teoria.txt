@@ -1,0 +1,51 @@
+SQL:  https://www.w3schools.com/sql/default.asp
+
+Lenguaje estructurado de consultas. 
+Base de datos relacional.
+Permite acceder a base de datos. 
+
+
+
+
+
+DBS (Sistema de Gestión de Bases de Datos):
+
+Es un software que permite a los usuarios crear, gestionar y manipular bases de datos de manera eficiente.
+ejm: MySQL
+
+
+
+
+
+
+
+Fundamentos de SQL y bases de datos:
+Representa objetos de bases de datos.
+
+1. Entidad: El objeto que se desea representar. 
+2. Atributos: Caracteristicas de la entidad.
+Los datos se representan en tablas (filas y columnas)
+
+
+
+
+
+
+
+Tipos de relaciones:
+1:1 (uno a uno)
+1:n (uno a varios)
+n:n (varios a varios)
+
+
+
+
+
+Tipos de Datos:
+Tipos de Datos Numéricos
+Tipos de datos de Cadena (Texto)
+Tipos de datos de fecha y hora
+Tipos de datos binarios
+Tipos de datos booleanos
+Tipos de datos espaciales
+Entre otros.
